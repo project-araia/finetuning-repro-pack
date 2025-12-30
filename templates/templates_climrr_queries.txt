@@ -1,0 +1,1199 @@
+
+--- TYPE 0: SINGLE VALUE LOOKUP ---
+
+Query: What is the historical Annual Heating Degree Days in {Location}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} is {hdd_hist}.
+----------------------------------------
+Query: What is the projected Annual Heating Degree Days in {Location} under Mid-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {hdd_rcp85_midc}.
+----------------------------------------
+Query: What is the historical Annual Cooling Degree Days in {Location}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} is {cdd_hist}.
+----------------------------------------
+Query: What is the projected Annual Cooling Degree Days in {Location} under Mid-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {cdd_rcp85_midc}.
+----------------------------------------
+Query: What is the historical Annual Average Maximum Temperature in {Location}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} is {tempmaxann_hist}.
+----------------------------------------
+Query: What is the projected Annual Average Maximum Temperature in {Location} under Mid-Century RCP4.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {tempmaxann_rcp45_midc}.
+----------------------------------------
+Query: What is the projected Annual Average Maximum Temperature in {Location} under Mid-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {tempmaxann_rcp85_midc}.
+----------------------------------------
+Query: What is the projected Annual Average Maximum Temperature in {Location} under End-Century RCP4.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {tempmaxann_rcp45_endc}.
+----------------------------------------
+Query: What is the projected Annual Average Maximum Temperature in {Location} under End-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {tempmaxann_rcp85_endc}.
+----------------------------------------
+Query: What is the historical Winter Average Maximum Temperature in {Location}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} is {tempmax_seas_hist_winter}.
+----------------------------------------
+Query: What is the projected Winter Average Maximum Temperature in {Location} under Mid-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_midc_winter}.
+----------------------------------------
+Query: What is the projected Winter Average Maximum Temperature in {Location} under End-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_endc_winter}.
+----------------------------------------
+Query: What is the historical Spring Average Maximum Temperature in {Location}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} is {tempmax_seas_hist_spring}.
+----------------------------------------
+Query: What is the projected Spring Average Maximum Temperature in {Location} under Mid-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_mid_spring}.
+----------------------------------------
+Query: What is the projected Spring Average Maximum Temperature in {Location} under End-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_end_spring}.
+----------------------------------------
+Query: What is the historical Summer Average Maximum Temperature in {Location}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} is {tempmax_seas_hist_summer}.
+----------------------------------------
+Query: What is the projected Summer Average Maximum Temperature in {Location} under Mid-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_mid_summer}.
+----------------------------------------
+Query: What is the projected Summer Average Maximum Temperature in {Location} under End-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_end_summer}.
+----------------------------------------
+Query: What is the historical Autumn Average Maximum Temperature in {Location}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} is {tempmax_seas_hist_autum}.
+----------------------------------------
+Query: What is the projected Autumn Average Maximum Temperature in {Location} under Mid-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_mid_autumn}.
+----------------------------------------
+Query: What is the projected Autumn Average Maximum Temperature in {Location} under End-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_end_autumn}.
+----------------------------------------
+Query: What is the historical Annual Average Minimum Temperature in {Location}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} is {tempminann_hist}.
+----------------------------------------
+Query: What is the projected Annual Average Minimum Temperature in {Location} under Mid-Century RCP4.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {tempminann_rcp45_midc}.
+----------------------------------------
+Query: What is the projected Annual Average Minimum Temperature in {Location} under Mid-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {tempminann_rcp85_midc}.
+----------------------------------------
+Query: What is the projected Annual Average Minimum Temperature in {Location} under End-Century RCP4.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {tempminann_rcp45_endc}.
+----------------------------------------
+Query: What is the projected Annual Average Minimum Temperature in {Location} under End-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {tempminann_rcp85_endc}.
+----------------------------------------
+Query: What is the historical Winter Average Minimum Temperature in {Location}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} is {tempmin_seas_hist_winter}.
+----------------------------------------
+Query: What is the projected Winter Average Minimum Temperature in {Location} under Mid-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_midc_winter}.
+----------------------------------------
+Query: What is the projected Winter Average Minimum Temperature in {Location} under End-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_endc_winter}.
+----------------------------------------
+Query: What is the historical Spring Average Minimum Temperature in {Location}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} is {tempmin_seas_hist_spring}.
+----------------------------------------
+Query: What is the projected Spring Average Minimum Temperature in {Location} under Mid-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_mid_spring}.
+----------------------------------------
+Query: What is the projected Spring Average Minimum Temperature in {Location} under End-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_end_spring}.
+----------------------------------------
+Query: What is the historical Summer Average Minimum Temperature in {Location}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} is {tempmin_seas_hist_summer}.
+----------------------------------------
+Query: What is the projected Summer Average Minimum Temperature in {Location} under Mid-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_mid_summer}.
+----------------------------------------
+Query: What is the projected Summer Average Minimum Temperature in {Location} under End-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_end_summer}.
+----------------------------------------
+Query: What is the historical Autumn Average Minimum Temperature in {Location}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} is {tempmin_seas_hist_autum}.
+----------------------------------------
+Query: What is the projected Autumn Average Minimum Temperature in {Location} under Mid-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_mid_autumn}.
+----------------------------------------
+Query: What is the projected Autumn Average Minimum Temperature in {Location} under End-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_end_autumn}.
+----------------------------------------
+Query: What is the historical Annual Wind Speed in {Location}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} is {windspeed_hist}.
+----------------------------------------
+Query: What is the projected Annual Wind Speed in {Location} under Mid-Century RCP4.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {windspeed_rcp45_midc}.
+----------------------------------------
+Query: What is the projected Annual Wind Speed in {Location} under Mid-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {windspeed_rcp85_midc}.
+----------------------------------------
+Query: What is the projected Annual Wind Speed in {Location} under End-Century RCP4.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {windspeed_rcp45_endc}.
+----------------------------------------
+Query: What is the projected Annual Wind Speed in {Location} under End-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {windspeed_rcp85_endc}.
+----------------------------------------
+Query: What is the historical Winter Fire Weather Index (95th percentile) in {Location}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} is {FWIBins_HistWin_95}.
+----------------------------------------
+Query: What is the projected Winter Fire Weather Index (95th percentile) in {Location} under Mid-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_MidWin_95}.
+----------------------------------------
+Query: What is the projected Winter Fire Weather Index (95th percentile) in {Location} under End-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_EndWin_95}.
+----------------------------------------
+Query: What is the historical Spring Fire Weather Index (95th percentile) in {Location}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} is {FWIBins_HistSpr_95}.
+----------------------------------------
+Query: What is the projected Spring Fire Weather Index (95th percentile) in {Location} under Mid-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_MidSpr_95}.
+----------------------------------------
+Query: What is the projected Spring Fire Weather Index (95th percentile) in {Location} under End-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_EndSpr_95}.
+----------------------------------------
+Query: What is the historical Summer Fire Weather Index (95th percentile) in {Location}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} is {FWIBins_HistSum_95}.
+----------------------------------------
+Query: What is the projected Summer Fire Weather Index (95th percentile) in {Location} under Mid-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_MidSum_95}.
+----------------------------------------
+Query: What is the projected Summer Fire Weather Index (95th percentile) in {Location} under End-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_EndSum_95}.
+----------------------------------------
+Query: What is the historical Autumn Fire Weather Index (95th percentile) in {Location}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} is {FWIBins_HistAut_95}.
+----------------------------------------
+Query: What is the projected Autumn Fire Weather Index (95th percentile) in {Location} under Mid-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_MidAut_95}.
+----------------------------------------
+Query: What is the projected Autumn Fire Weather Index (95th percentile) in {Location} under End-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_EndAut_95}.
+----------------------------------------
+Query: What is the historical Winter Fire Weather Index (Class) in {Location}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} is {FWIBins_HistWin_NC}.
+----------------------------------------
+Query: What is the projected Winter Fire Weather Index (Class) in {Location} under Mid-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_MidWin_NC}.
+----------------------------------------
+Query: What is the projected Winter Fire Weather Index (Class) in {Location} under End-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_EndWin_NC}.
+----------------------------------------
+Query: What is the historical Spring Fire Weather Index (Class) in {Location}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} is {FWIBins_HistSpr_NC}.
+----------------------------------------
+Query: What is the projected Spring Fire Weather Index (Class) in {Location} under Mid-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_MidSpr_NC}.
+----------------------------------------
+Query: What is the projected Spring Fire Weather Index (Class) in {Location} under End-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_EndSpr_NC}.
+----------------------------------------
+Query: What is the historical Summer Fire Weather Index (Class) in {Location}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} is {FWIBins_HistSum_NC}.
+----------------------------------------
+Query: What is the projected Summer Fire Weather Index (Class) in {Location} under Mid-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_MidSum_NC}.
+----------------------------------------
+Query: What is the projected Summer Fire Weather Index (Class) in {Location} under End-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_EndSum_NC}.
+----------------------------------------
+Query: What is the historical Autumn Fire Weather Index (Class) in {Location}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} is {FWIBins_HistAut_NC}.
+----------------------------------------
+Query: What is the projected Autumn Fire Weather Index (Class) in {Location} under Mid-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_MidAut_NC}.
+----------------------------------------
+Query: What is the projected Autumn Fire Weather Index (Class) in {Location} under End-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_EndAut_NC}.
+----------------------------------------
+Query: What is the historical Annual Days without Precipitation in {Location}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} is {noprecip_hist}.
+----------------------------------------
+Query: What is the projected Annual Days without Precipitation in {Location} under Mid-Century RCP4.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {noprecip_rcp45_midc}.
+----------------------------------------
+Query: What is the projected Annual Days without Precipitation in {Location} under Mid-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {noprecip_rcp85_midc}.
+----------------------------------------
+Query: What is the projected Annual Days without Precipitation in {Location} under End-Century RCP4.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {noprecip_rcp45_endc}.
+----------------------------------------
+Query: What is the projected Annual Days without Precipitation in {Location} under End-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {noprecip_rcp85_endc}.
+----------------------------------------
+Query: What is the historical Annual Total Precipitation in {Location}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} is {precipann_hist}.
+----------------------------------------
+Query: What is the projected Annual Total Precipitation in {Location} under Mid-Century RCP4.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {precipann_rcp45_midc}.
+----------------------------------------
+Query: What is the projected Annual Total Precipitation in {Location} under Mid-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {precipann_rcp85_midc}.
+----------------------------------------
+Query: What is the projected Annual Total Precipitation in {Location} under End-Century RCP4.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {precipann_rcp45_endc}.
+----------------------------------------
+Query: What is the projected Annual Total Precipitation in {Location} under End-Century RCP8.5?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario} is {precipann_rcp85_endc}.
+----------------------------------------
+
+
+--- TYPE 1: TIME PERIOD COMPARISON (Hist vs. Projected) ---
+
+Query: How does the historical Annual Heating Degree Days in {Location} compare to the projected Mid-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {hdd_hist}, which is {COMPARE|hdd_hist|hdd_rcp85_midc} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {hdd_rcp85_midc}.
+----------------------------------------
+Query: How does the projected Annual Heating Degree Days in {Location} under Mid-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {hdd_rcp85_midc}, which is {COMPARE|hdd_rcp85_midc|hdd_hist} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {hdd_hist}.
+----------------------------------------
+Query: How does the historical Annual Cooling Degree Days in {Location} compare to the projected Mid-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {cdd_hist}, which is {COMPARE|cdd_hist|cdd_rcp85_midc} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {cdd_rcp85_midc}.
+----------------------------------------
+Query: How does the projected Annual Cooling Degree Days in {Location} under Mid-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {cdd_rcp85_midc}, which is {COMPARE|cdd_rcp85_midc|cdd_hist} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {cdd_hist}.
+----------------------------------------
+Query: How does the historical Annual Average Maximum Temperature in {Location} compare to the projected Mid-Century RCP4.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {tempmaxann_hist}, which is {COMPARE|tempmaxann_hist|tempmaxann_rcp45_midc} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {tempmaxann_rcp45_midc}.
+----------------------------------------
+Query: How does the historical Annual Average Maximum Temperature in {Location} compare to the projected Mid-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {tempmaxann_hist}, which is {COMPARE|tempmaxann_hist|tempmaxann_rcp85_midc} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {tempmaxann_rcp85_midc}.
+----------------------------------------
+Query: How does the historical Annual Average Maximum Temperature in {Location} compare to the projected End-Century RCP4.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {tempmaxann_hist}, which is {COMPARE|tempmaxann_hist|tempmaxann_rcp45_endc} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {tempmaxann_rcp45_endc}.
+----------------------------------------
+Query: How does the historical Annual Average Maximum Temperature in {Location} compare to the projected End-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {tempmaxann_hist}, which is {COMPARE|tempmaxann_hist|tempmaxann_rcp85_endc} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {tempmaxann_rcp85_endc}.
+----------------------------------------
+Query: How does the projected Annual Average Maximum Temperature in {Location} under Mid-Century RCP4.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {tempmaxann_rcp45_midc}, which is {COMPARE|tempmaxann_rcp45_midc|tempmaxann_hist} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {tempmaxann_hist}.
+----------------------------------------
+Query: How does the projected Annual Average Maximum Temperature in {Location} under Mid-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {tempmaxann_rcp85_midc}, which is {COMPARE|tempmaxann_rcp85_midc|tempmaxann_hist} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {tempmaxann_hist}.
+----------------------------------------
+Query: How does the projected Annual Average Maximum Temperature in {Location} under End-Century RCP4.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {tempmaxann_rcp45_endc}, which is {COMPARE|tempmaxann_rcp45_endc|tempmaxann_hist} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {tempmaxann_hist}.
+----------------------------------------
+Query: How does the projected Annual Average Maximum Temperature in {Location} under End-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {tempmaxann_rcp85_endc}, which is {COMPARE|tempmaxann_rcp85_endc|tempmaxann_hist} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {tempmaxann_hist}.
+----------------------------------------
+Query: How does the historical Winter Average Maximum Temperature in {Location} compare to the projected Mid-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {tempmax_seas_hist_winter}, which is {COMPARE|tempmax_seas_hist_winter|tempmax_seas_rcp85_midc_winter} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {tempmax_seas_rcp85_midc_winter}.
+----------------------------------------
+Query: How does the historical Winter Average Maximum Temperature in {Location} compare to the projected End-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {tempmax_seas_hist_winter}, which is {COMPARE|tempmax_seas_hist_winter|tempmax_seas_rcp85_endc_winter} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {tempmax_seas_rcp85_endc_winter}.
+----------------------------------------
+Query: How does the projected Winter Average Maximum Temperature in {Location} under Mid-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {tempmax_seas_rcp85_midc_winter}, which is {COMPARE|tempmax_seas_rcp85_midc_winter|tempmax_seas_hist_winter} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {tempmax_seas_hist_winter}.
+----------------------------------------
+Query: How does the projected Winter Average Maximum Temperature in {Location} under End-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {tempmax_seas_rcp85_endc_winter}, which is {COMPARE|tempmax_seas_rcp85_endc_winter|tempmax_seas_hist_winter} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {tempmax_seas_hist_winter}.
+----------------------------------------
+Query: How does the historical Spring Average Maximum Temperature in {Location} compare to the projected Mid-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {tempmax_seas_hist_spring}, which is {COMPARE|tempmax_seas_hist_spring|tempmax_seas_rcp85_mid_spring} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {tempmax_seas_rcp85_mid_spring}.
+----------------------------------------
+Query: How does the historical Spring Average Maximum Temperature in {Location} compare to the projected End-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {tempmax_seas_hist_spring}, which is {COMPARE|tempmax_seas_hist_spring|tempmax_seas_rcp85_end_spring} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {tempmax_seas_rcp85_end_spring}.
+----------------------------------------
+Query: How does the projected Spring Average Maximum Temperature in {Location} under Mid-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {tempmax_seas_rcp85_mid_spring}, which is {COMPARE|tempmax_seas_rcp85_mid_spring|tempmax_seas_hist_spring} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {tempmax_seas_hist_spring}.
+----------------------------------------
+Query: How does the projected Spring Average Maximum Temperature in {Location} under End-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {tempmax_seas_rcp85_end_spring}, which is {COMPARE|tempmax_seas_rcp85_end_spring|tempmax_seas_hist_spring} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {tempmax_seas_hist_spring}.
+----------------------------------------
+Query: How does the historical Summer Average Maximum Temperature in {Location} compare to the projected Mid-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {tempmax_seas_hist_summer}, which is {COMPARE|tempmax_seas_hist_summer|tempmax_seas_rcp85_mid_summer} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {tempmax_seas_rcp85_mid_summer}.
+----------------------------------------
+Query: How does the historical Summer Average Maximum Temperature in {Location} compare to the projected End-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {tempmax_seas_hist_summer}, which is {COMPARE|tempmax_seas_hist_summer|tempmax_seas_rcp85_end_summer} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {tempmax_seas_rcp85_end_summer}.
+----------------------------------------
+Query: How does the projected Summer Average Maximum Temperature in {Location} under Mid-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {tempmax_seas_rcp85_mid_summer}, which is {COMPARE|tempmax_seas_rcp85_mid_summer|tempmax_seas_hist_summer} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {tempmax_seas_hist_summer}.
+----------------------------------------
+Query: How does the projected Summer Average Maximum Temperature in {Location} under End-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {tempmax_seas_rcp85_end_summer}, which is {COMPARE|tempmax_seas_rcp85_end_summer|tempmax_seas_hist_summer} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {tempmax_seas_hist_summer}.
+----------------------------------------
+Query: How does the historical Autumn Average Maximum Temperature in {Location} compare to the projected Mid-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {tempmax_seas_hist_autum}, which is {COMPARE|tempmax_seas_hist_autum|tempmax_seas_rcp85_mid_autumn} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {tempmax_seas_rcp85_mid_autumn}.
+----------------------------------------
+Query: How does the historical Autumn Average Maximum Temperature in {Location} compare to the projected End-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {tempmax_seas_hist_autum}, which is {COMPARE|tempmax_seas_hist_autum|tempmax_seas_rcp85_end_autumn} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {tempmax_seas_rcp85_end_autumn}.
+----------------------------------------
+Query: How does the projected Autumn Average Maximum Temperature in {Location} under Mid-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {tempmax_seas_rcp85_mid_autumn}, which is {COMPARE|tempmax_seas_rcp85_mid_autumn|tempmax_seas_hist_autum} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {tempmax_seas_hist_autum}.
+----------------------------------------
+Query: How does the projected Autumn Average Maximum Temperature in {Location} under End-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {tempmax_seas_rcp85_end_autumn}, which is {COMPARE|tempmax_seas_rcp85_end_autumn|tempmax_seas_hist_autum} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {tempmax_seas_hist_autum}.
+----------------------------------------
+Query: How does the historical Annual Average Minimum Temperature in {Location} compare to the projected Mid-Century RCP4.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {tempminann_hist}, which is {COMPARE|tempminann_hist|tempminann_rcp45_midc} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {tempminann_rcp45_midc}.
+----------------------------------------
+Query: How does the historical Annual Average Minimum Temperature in {Location} compare to the projected Mid-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {tempminann_hist}, which is {COMPARE|tempminann_hist|tempminann_rcp85_midc} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {tempminann_rcp85_midc}.
+----------------------------------------
+Query: How does the historical Annual Average Minimum Temperature in {Location} compare to the projected End-Century RCP4.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {tempminann_hist}, which is {COMPARE|tempminann_hist|tempminann_rcp45_endc} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {tempminann_rcp45_endc}.
+----------------------------------------
+Query: How does the historical Annual Average Minimum Temperature in {Location} compare to the projected End-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {tempminann_hist}, which is {COMPARE|tempminann_hist|tempminann_rcp85_endc} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {tempminann_rcp85_endc}.
+----------------------------------------
+Query: How does the projected Annual Average Minimum Temperature in {Location} under Mid-Century RCP4.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {tempminann_rcp45_midc}, which is {COMPARE|tempminann_rcp45_midc|tempminann_hist} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {tempminann_hist}.
+----------------------------------------
+Query: How does the projected Annual Average Minimum Temperature in {Location} under Mid-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {tempminann_rcp85_midc}, which is {COMPARE|tempminann_rcp85_midc|tempminann_hist} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {tempminann_hist}.
+----------------------------------------
+Query: How does the projected Annual Average Minimum Temperature in {Location} under End-Century RCP4.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {tempminann_rcp45_endc}, which is {COMPARE|tempminann_rcp45_endc|tempminann_hist} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {tempminann_hist}.
+----------------------------------------
+Query: How does the projected Annual Average Minimum Temperature in {Location} under End-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {tempminann_rcp85_endc}, which is {COMPARE|tempminann_rcp85_endc|tempminann_hist} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {tempminann_hist}.
+----------------------------------------
+Query: How does the historical Winter Average Minimum Temperature in {Location} compare to the projected Mid-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {tempmin_seas_hist_winter}, which is {COMPARE|tempmin_seas_hist_winter|tempmin_seas_rcp85_midc_winter} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {tempmin_seas_rcp85_midc_winter}.
+----------------------------------------
+Query: How does the historical Winter Average Minimum Temperature in {Location} compare to the projected End-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {tempmin_seas_hist_winter}, which is {COMPARE|tempmin_seas_hist_winter|tempmin_seas_rcp85_endc_winter} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {tempmin_seas_rcp85_endc_winter}.
+----------------------------------------
+Query: How does the projected Winter Average Minimum Temperature in {Location} under Mid-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {tempmin_seas_rcp85_midc_winter}, which is {COMPARE|tempmin_seas_rcp85_midc_winter|tempmin_seas_hist_winter} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {tempmin_seas_hist_winter}.
+----------------------------------------
+Query: How does the projected Winter Average Minimum Temperature in {Location} under End-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {tempmin_seas_rcp85_endc_winter}, which is {COMPARE|tempmin_seas_rcp85_endc_winter|tempmin_seas_hist_winter} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {tempmin_seas_hist_winter}.
+----------------------------------------
+Query: How does the historical Spring Average Minimum Temperature in {Location} compare to the projected Mid-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {tempmin_seas_hist_spring}, which is {COMPARE|tempmin_seas_hist_spring|tempmin_seas_rcp85_mid_spring} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {tempmin_seas_rcp85_mid_spring}.
+----------------------------------------
+Query: How does the historical Spring Average Minimum Temperature in {Location} compare to the projected End-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {tempmin_seas_hist_spring}, which is {COMPARE|tempmin_seas_hist_spring|tempmin_seas_rcp85_end_spring} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {tempmin_seas_rcp85_end_spring}.
+----------------------------------------
+Query: How does the projected Spring Average Minimum Temperature in {Location} under Mid-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {tempmin_seas_rcp85_mid_spring}, which is {COMPARE|tempmin_seas_rcp85_mid_spring|tempmin_seas_hist_spring} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {tempmin_seas_hist_spring}.
+----------------------------------------
+Query: How does the projected Spring Average Minimum Temperature in {Location} under End-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {tempmin_seas_rcp85_end_spring}, which is {COMPARE|tempmin_seas_rcp85_end_spring|tempmin_seas_hist_spring} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {tempmin_seas_hist_spring}.
+----------------------------------------
+Query: How does the historical Summer Average Minimum Temperature in {Location} compare to the projected Mid-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {tempmin_seas_hist_summer}, which is {COMPARE|tempmin_seas_hist_summer|tempmin_seas_rcp85_mid_summer} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {tempmin_seas_rcp85_mid_summer}.
+----------------------------------------
+Query: How does the historical Summer Average Minimum Temperature in {Location} compare to the projected End-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {tempmin_seas_hist_summer}, which is {COMPARE|tempmin_seas_hist_summer|tempmin_seas_rcp85_end_summer} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {tempmin_seas_rcp85_end_summer}.
+----------------------------------------
+Query: How does the projected Summer Average Minimum Temperature in {Location} under Mid-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {tempmin_seas_rcp85_mid_summer}, which is {COMPARE|tempmin_seas_rcp85_mid_summer|tempmin_seas_hist_summer} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {tempmin_seas_hist_summer}.
+----------------------------------------
+Query: How does the projected Summer Average Minimum Temperature in {Location} under End-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {tempmin_seas_rcp85_end_summer}, which is {COMPARE|tempmin_seas_rcp85_end_summer|tempmin_seas_hist_summer} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {tempmin_seas_hist_summer}.
+----------------------------------------
+Query: How does the historical Autumn Average Minimum Temperature in {Location} compare to the projected Mid-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {tempmin_seas_hist_autum}, which is {COMPARE|tempmin_seas_hist_autum|tempmin_seas_rcp85_mid_autumn} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {tempmin_seas_rcp85_mid_autumn}.
+----------------------------------------
+Query: How does the historical Autumn Average Minimum Temperature in {Location} compare to the projected End-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {tempmin_seas_hist_autum}, which is {COMPARE|tempmin_seas_hist_autum|tempmin_seas_rcp85_end_autumn} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {tempmin_seas_rcp85_end_autumn}.
+----------------------------------------
+Query: How does the projected Autumn Average Minimum Temperature in {Location} under Mid-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {tempmin_seas_rcp85_mid_autumn}, which is {COMPARE|tempmin_seas_rcp85_mid_autumn|tempmin_seas_hist_autum} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {tempmin_seas_hist_autum}.
+----------------------------------------
+Query: How does the projected Autumn Average Minimum Temperature in {Location} under End-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {tempmin_seas_rcp85_end_autumn}, which is {COMPARE|tempmin_seas_rcp85_end_autumn|tempmin_seas_hist_autum} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {tempmin_seas_hist_autum}.
+----------------------------------------
+Query: How does the historical Annual Wind Speed in {Location} compare to the projected Mid-Century RCP4.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {windspeed_hist}, which is {COMPARE|windspeed_hist|windspeed_rcp45_midc} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {windspeed_rcp45_midc}.
+----------------------------------------
+Query: How does the historical Annual Wind Speed in {Location} compare to the projected Mid-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {windspeed_hist}, which is {COMPARE|windspeed_hist|windspeed_rcp85_midc} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {windspeed_rcp85_midc}.
+----------------------------------------
+Query: How does the historical Annual Wind Speed in {Location} compare to the projected End-Century RCP4.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {windspeed_hist}, which is {COMPARE|windspeed_hist|windspeed_rcp45_endc} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {windspeed_rcp45_endc}.
+----------------------------------------
+Query: How does the historical Annual Wind Speed in {Location} compare to the projected End-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {windspeed_hist}, which is {COMPARE|windspeed_hist|windspeed_rcp85_endc} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {windspeed_rcp85_endc}.
+----------------------------------------
+Query: How does the projected Annual Wind Speed in {Location} under Mid-Century RCP4.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {windspeed_rcp45_midc}, which is {COMPARE|windspeed_rcp45_midc|windspeed_hist} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {windspeed_hist}.
+----------------------------------------
+Query: How does the projected Annual Wind Speed in {Location} under Mid-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {windspeed_rcp85_midc}, which is {COMPARE|windspeed_rcp85_midc|windspeed_hist} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {windspeed_hist}.
+----------------------------------------
+Query: How does the projected Annual Wind Speed in {Location} under End-Century RCP4.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {windspeed_rcp45_endc}, which is {COMPARE|windspeed_rcp45_endc|windspeed_hist} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {windspeed_hist}.
+----------------------------------------
+Query: How does the projected Annual Wind Speed in {Location} under End-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {windspeed_rcp85_endc}, which is {COMPARE|windspeed_rcp85_endc|windspeed_hist} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {windspeed_hist}.
+----------------------------------------
+Query: How does the historical Winter Fire Weather Index (95th percentile) in {Location} compare to the projected Mid-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {FWIBins_HistWin_95}, which is {COMPARE|FWIBins_HistWin_95|FWIBins_MidWin_95} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {FWIBins_MidWin_95}.
+----------------------------------------
+Query: How does the historical Winter Fire Weather Index (95th percentile) in {Location} compare to the projected End-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {FWIBins_HistWin_95}, which is {COMPARE|FWIBins_HistWin_95|FWIBins_EndWin_95} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {FWIBins_EndWin_95}.
+----------------------------------------
+Query: How does the projected Winter Fire Weather Index (95th percentile) in {Location} under Mid-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {FWIBins_MidWin_95}, which is {COMPARE|FWIBins_MidWin_95|FWIBins_HistWin_95} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {FWIBins_HistWin_95}.
+----------------------------------------
+Query: How does the projected Winter Fire Weather Index (95th percentile) in {Location} under End-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {FWIBins_EndWin_95}, which is {COMPARE|FWIBins_EndWin_95|FWIBins_HistWin_95} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {FWIBins_HistWin_95}.
+----------------------------------------
+Query: How does the historical Spring Fire Weather Index (95th percentile) in {Location} compare to the projected Mid-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {FWIBins_HistSpr_95}, which is {COMPARE|FWIBins_HistSpr_95|FWIBins_MidSpr_95} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {FWIBins_MidSpr_95}.
+----------------------------------------
+Query: How does the historical Spring Fire Weather Index (95th percentile) in {Location} compare to the projected End-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {FWIBins_HistSpr_95}, which is {COMPARE|FWIBins_HistSpr_95|FWIBins_EndSpr_95} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {FWIBins_EndSpr_95}.
+----------------------------------------
+Query: How does the projected Spring Fire Weather Index (95th percentile) in {Location} under Mid-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {FWIBins_MidSpr_95}, which is {COMPARE|FWIBins_MidSpr_95|FWIBins_HistSpr_95} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {FWIBins_HistSpr_95}.
+----------------------------------------
+Query: How does the projected Spring Fire Weather Index (95th percentile) in {Location} under End-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {FWIBins_EndSpr_95}, which is {COMPARE|FWIBins_EndSpr_95|FWIBins_HistSpr_95} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {FWIBins_HistSpr_95}.
+----------------------------------------
+Query: How does the historical Summer Fire Weather Index (95th percentile) in {Location} compare to the projected Mid-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {FWIBins_HistSum_95}, which is {COMPARE|FWIBins_HistSum_95|FWIBins_MidSum_95} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {FWIBins_MidSum_95}.
+----------------------------------------
+Query: How does the historical Summer Fire Weather Index (95th percentile) in {Location} compare to the projected End-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {FWIBins_HistSum_95}, which is {COMPARE|FWIBins_HistSum_95|FWIBins_EndSum_95} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {FWIBins_EndSum_95}.
+----------------------------------------
+Query: How does the projected Summer Fire Weather Index (95th percentile) in {Location} under Mid-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {FWIBins_MidSum_95}, which is {COMPARE|FWIBins_MidSum_95|FWIBins_HistSum_95} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {FWIBins_HistSum_95}.
+----------------------------------------
+Query: How does the projected Summer Fire Weather Index (95th percentile) in {Location} under End-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {FWIBins_EndSum_95}, which is {COMPARE|FWIBins_EndSum_95|FWIBins_HistSum_95} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {FWIBins_HistSum_95}.
+----------------------------------------
+Query: How does the historical Autumn Fire Weather Index (95th percentile) in {Location} compare to the projected Mid-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {FWIBins_HistAut_95}, which is {COMPARE|FWIBins_HistAut_95|FWIBins_MidAut_95} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {FWIBins_MidAut_95}.
+----------------------------------------
+Query: How does the historical Autumn Fire Weather Index (95th percentile) in {Location} compare to the projected End-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {FWIBins_HistAut_95}, which is {COMPARE|FWIBins_HistAut_95|FWIBins_EndAut_95} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {FWIBins_EndAut_95}.
+----------------------------------------
+Query: How does the projected Autumn Fire Weather Index (95th percentile) in {Location} under Mid-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {FWIBins_MidAut_95}, which is {COMPARE|FWIBins_MidAut_95|FWIBins_HistAut_95} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {FWIBins_HistAut_95}.
+----------------------------------------
+Query: How does the projected Autumn Fire Weather Index (95th percentile) in {Location} under End-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {FWIBins_EndAut_95}, which is {COMPARE|FWIBins_EndAut_95|FWIBins_HistAut_95} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {FWIBins_HistAut_95}.
+----------------------------------------
+Query: How does the historical Winter Fire Weather Index (Class) in {Location} compare to the projected Mid-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {FWIBins_HistWin_NC}, which is {COMPARE|FWIBins_HistWin_NC|FWIBins_MidWin_NC} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {FWIBins_MidWin_NC}.
+----------------------------------------
+Query: How does the historical Winter Fire Weather Index (Class) in {Location} compare to the projected End-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {FWIBins_HistWin_NC}, which is {COMPARE|FWIBins_HistWin_NC|FWIBins_EndWin_NC} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {FWIBins_EndWin_NC}.
+----------------------------------------
+Query: How does the projected Winter Fire Weather Index (Class) in {Location} under Mid-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {FWIBins_MidWin_NC}, which is {COMPARE|FWIBins_MidWin_NC|FWIBins_HistWin_NC} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {FWIBins_HistWin_NC}.
+----------------------------------------
+Query: How does the projected Winter Fire Weather Index (Class) in {Location} under End-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {FWIBins_EndWin_NC}, which is {COMPARE|FWIBins_EndWin_NC|FWIBins_HistWin_NC} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {FWIBins_HistWin_NC}.
+----------------------------------------
+Query: How does the historical Spring Fire Weather Index (Class) in {Location} compare to the projected Mid-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {FWIBins_HistSpr_NC}, which is {COMPARE|FWIBins_HistSpr_NC|FWIBins_MidSpr_NC} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {FWIBins_MidSpr_NC}.
+----------------------------------------
+Query: How does the historical Spring Fire Weather Index (Class) in {Location} compare to the projected End-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {FWIBins_HistSpr_NC}, which is {COMPARE|FWIBins_HistSpr_NC|FWIBins_EndSpr_NC} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {FWIBins_EndSpr_NC}.
+----------------------------------------
+Query: How does the projected Spring Fire Weather Index (Class) in {Location} under Mid-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {FWIBins_MidSpr_NC}, which is {COMPARE|FWIBins_MidSpr_NC|FWIBins_HistSpr_NC} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {FWIBins_HistSpr_NC}.
+----------------------------------------
+Query: How does the projected Spring Fire Weather Index (Class) in {Location} under End-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {FWIBins_EndSpr_NC}, which is {COMPARE|FWIBins_EndSpr_NC|FWIBins_HistSpr_NC} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {FWIBins_HistSpr_NC}.
+----------------------------------------
+Query: How does the historical Summer Fire Weather Index (Class) in {Location} compare to the projected Mid-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {FWIBins_HistSum_NC}, which is {COMPARE|FWIBins_HistSum_NC|FWIBins_MidSum_NC} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {FWIBins_MidSum_NC}.
+----------------------------------------
+Query: How does the historical Summer Fire Weather Index (Class) in {Location} compare to the projected End-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {FWIBins_HistSum_NC}, which is {COMPARE|FWIBins_HistSum_NC|FWIBins_EndSum_NC} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {FWIBins_EndSum_NC}.
+----------------------------------------
+Query: How does the projected Summer Fire Weather Index (Class) in {Location} under Mid-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {FWIBins_MidSum_NC}, which is {COMPARE|FWIBins_MidSum_NC|FWIBins_HistSum_NC} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {FWIBins_HistSum_NC}.
+----------------------------------------
+Query: How does the projected Summer Fire Weather Index (Class) in {Location} under End-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {FWIBins_EndSum_NC}, which is {COMPARE|FWIBins_EndSum_NC|FWIBins_HistSum_NC} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {FWIBins_HistSum_NC}.
+----------------------------------------
+Query: How does the historical Autumn Fire Weather Index (Class) in {Location} compare to the projected Mid-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {FWIBins_HistAut_NC}, which is {COMPARE|FWIBins_HistAut_NC|FWIBins_MidAut_NC} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {FWIBins_MidAut_NC}.
+----------------------------------------
+Query: How does the historical Autumn Fire Weather Index (Class) in {Location} compare to the projected End-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {FWIBins_HistAut_NC}, which is {COMPARE|FWIBins_HistAut_NC|FWIBins_EndAut_NC} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {FWIBins_EndAut_NC}.
+----------------------------------------
+Query: How does the projected Autumn Fire Weather Index (Class) in {Location} under Mid-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {FWIBins_MidAut_NC}, which is {COMPARE|FWIBins_MidAut_NC|FWIBins_HistAut_NC} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {FWIBins_HistAut_NC}.
+----------------------------------------
+Query: How does the projected Autumn Fire Weather Index (Class) in {Location} under End-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {FWIBins_EndAut_NC}, which is {COMPARE|FWIBins_EndAut_NC|FWIBins_HistAut_NC} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {FWIBins_HistAut_NC}.
+----------------------------------------
+Query: How does the historical Annual Days without Precipitation in {Location} compare to the projected Mid-Century RCP4.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {noprecip_hist}, which is {COMPARE|noprecip_hist|noprecip_rcp45_midc} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {noprecip_rcp45_midc}.
+----------------------------------------
+Query: How does the historical Annual Days without Precipitation in {Location} compare to the projected Mid-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {noprecip_hist}, which is {COMPARE|noprecip_hist|noprecip_rcp85_midc} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {noprecip_rcp85_midc}.
+----------------------------------------
+Query: How does the historical Annual Days without Precipitation in {Location} compare to the projected End-Century RCP4.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {noprecip_hist}, which is {COMPARE|noprecip_hist|noprecip_rcp45_endc} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {noprecip_rcp45_endc}.
+----------------------------------------
+Query: How does the historical Annual Days without Precipitation in {Location} compare to the projected End-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {noprecip_hist}, which is {COMPARE|noprecip_hist|noprecip_rcp85_endc} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {noprecip_rcp85_endc}.
+----------------------------------------
+Query: How does the projected Annual Days without Precipitation in {Location} under Mid-Century RCP4.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {noprecip_rcp45_midc}, which is {COMPARE|noprecip_rcp45_midc|noprecip_hist} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {noprecip_hist}.
+----------------------------------------
+Query: How does the projected Annual Days without Precipitation in {Location} under Mid-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {noprecip_rcp85_midc}, which is {COMPARE|noprecip_rcp85_midc|noprecip_hist} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {noprecip_hist}.
+----------------------------------------
+Query: How does the projected Annual Days without Precipitation in {Location} under End-Century RCP4.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {noprecip_rcp45_endc}, which is {COMPARE|noprecip_rcp45_endc|noprecip_hist} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {noprecip_hist}.
+----------------------------------------
+Query: How does the projected Annual Days without Precipitation in {Location} under End-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {noprecip_rcp85_endc}, which is {COMPARE|noprecip_rcp85_endc|noprecip_hist} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {noprecip_hist}.
+----------------------------------------
+Query: How does the historical Annual Total Precipitation in {Location} compare to the projected Mid-Century RCP4.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {precipann_hist}, which is {COMPARE|precipann_hist|precipann_rcp45_midc} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {precipann_rcp45_midc}.
+----------------------------------------
+Query: How does the historical Annual Total Precipitation in {Location} compare to the projected Mid-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {precipann_hist}, which is {COMPARE|precipann_hist|precipann_rcp85_midc} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {precipann_rcp85_midc}.
+----------------------------------------
+Query: How does the historical Annual Total Precipitation in {Location} compare to the projected End-Century RCP4.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {precipann_hist}, which is {COMPARE|precipann_hist|precipann_rcp45_endc} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {precipann_rcp45_endc}.
+----------------------------------------
+Query: How does the historical Annual Total Precipitation in {Location} compare to the projected End-Century RCP8.5?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} is {precipann_hist}, which is {COMPARE|precipann_hist|precipann_rcp85_endc} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  under {RCPscenario~2} of {precipann_rcp85_endc}.
+----------------------------------------
+Query: How does the projected Annual Total Precipitation in {Location} under Mid-Century RCP4.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {precipann_rcp45_midc}, which is {COMPARE|precipann_rcp45_midc|precipann_hist} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {precipann_hist}.
+----------------------------------------
+Query: How does the projected Annual Total Precipitation in {Location} under Mid-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {precipann_rcp85_midc}, which is {COMPARE|precipann_rcp85_midc|precipann_hist} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {precipann_hist}.
+----------------------------------------
+Query: How does the projected Annual Total Precipitation in {Location} under End-Century RCP4.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {precipann_rcp45_endc}, which is {COMPARE|precipann_rcp45_endc|precipann_hist} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {precipann_hist}.
+----------------------------------------
+Query: How does the projected Annual Total Precipitation in {Location} under End-Century RCP8.5 compare to the historical?
+Answer: The {TimePeriod~1} {Seasonality} {ClimateVariable} in {Location} under {RCPscenario~1} is {precipann_rcp85_endc}, which is {COMPARE|precipann_rcp85_endc|precipann_hist} than the {TimePeriod~2} {Seasonality} {ClimateVariable}  of {precipann_hist}.
+----------------------------------------
+
+
+--- TYPE 2: RCP SCENARIO COMPARISON (Projected Only) ---
+
+Query: How does the projected Annual Average Maximum Temperature in {Location} under Mid-Century RCP4.5 compare to Mid-Century RCP8.5?
+Answer: The projected {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {Mid-Century RCP4.5} is {tempmaxann_rcp45_midc}, which is {COMPARE|tempmaxann_rcp45_midc|tempmaxann_rcp85_midc} than the {TimePeriod} {Seasonality} {ClimateVariable} under {Mid-Century RCP8.5} of {tempmaxann_rcp85_midc}.
+----------------------------------------
+Query: How does the projected Annual Average Maximum Temperature in {Location} under End-Century RCP4.5 compare to End-Century RCP8.5?
+Answer: The projected {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {End-Century RCP4.5} is {tempmaxann_rcp45_endc}, which is {COMPARE|tempmaxann_rcp45_endc|tempmaxann_rcp85_endc} than the {TimePeriod} {Seasonality} {ClimateVariable} under {End-Century RCP8.5} of {tempmaxann_rcp85_endc}.
+----------------------------------------
+Query: How does the projected Annual Average Minimum Temperature in {Location} under Mid-Century RCP4.5 compare to Mid-Century RCP8.5?
+Answer: The projected {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {Mid-Century RCP4.5} is {tempminann_rcp45_midc}, which is {COMPARE|tempminann_rcp45_midc|tempminann_rcp85_midc} than the {TimePeriod} {Seasonality} {ClimateVariable} under {Mid-Century RCP8.5} of {tempminann_rcp85_midc}.
+----------------------------------------
+Query: How does the projected Annual Average Minimum Temperature in {Location} under End-Century RCP4.5 compare to End-Century RCP8.5?
+Answer: The projected {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {End-Century RCP4.5} is {tempminann_rcp45_endc}, which is {COMPARE|tempminann_rcp45_endc|tempminann_rcp85_endc} than the {TimePeriod} {Seasonality} {ClimateVariable} under {End-Century RCP8.5} of {tempminann_rcp85_endc}.
+----------------------------------------
+Query: How does the projected Annual Wind Speed in {Location} under Mid-Century RCP4.5 compare to Mid-Century RCP8.5?
+Answer: The projected {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {Mid-Century RCP4.5} is {windspeed_rcp45_midc}, which is {COMPARE|windspeed_rcp45_midc|windspeed_rcp85_midc} than the {TimePeriod} {Seasonality} {ClimateVariable} under {Mid-Century RCP8.5} of {windspeed_rcp85_midc}.
+----------------------------------------
+Query: How does the projected Annual Wind Speed in {Location} under End-Century RCP4.5 compare to End-Century RCP8.5?
+Answer: The projected {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {End-Century RCP4.5} is {windspeed_rcp45_endc}, which is {COMPARE|windspeed_rcp45_endc|windspeed_rcp85_endc} than the {TimePeriod} {Seasonality} {ClimateVariable} under {End-Century RCP8.5} of {windspeed_rcp85_endc}.
+----------------------------------------
+Query: How does the projected Annual Days without Precipitation in {Location} under Mid-Century RCP4.5 compare to Mid-Century RCP8.5?
+Answer: The projected {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {Mid-Century RCP4.5} is {noprecip_rcp45_midc}, which is {COMPARE|noprecip_rcp45_midc|noprecip_rcp85_midc} than the {TimePeriod} {Seasonality} {ClimateVariable} under {Mid-Century RCP8.5} of {noprecip_rcp85_midc}.
+----------------------------------------
+Query: How does the projected Annual Days without Precipitation in {Location} under End-Century RCP4.5 compare to End-Century RCP8.5?
+Answer: The projected {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {End-Century RCP4.5} is {noprecip_rcp45_endc}, which is {COMPARE|noprecip_rcp45_endc|noprecip_rcp85_endc} than the {TimePeriod} {Seasonality} {ClimateVariable} under {End-Century RCP8.5} of {noprecip_rcp85_endc}.
+----------------------------------------
+Query: How does the projected Annual Total Precipitation in {Location} under Mid-Century RCP4.5 compare to Mid-Century RCP8.5?
+Answer: The projected {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {Mid-Century RCP4.5} is {precipann_rcp45_midc}, which is {COMPARE|precipann_rcp45_midc|precipann_rcp85_midc} than the {TimePeriod} {Seasonality} {ClimateVariable} under {Mid-Century RCP8.5} of {precipann_rcp85_midc}.
+----------------------------------------
+Query: How does the projected Annual Total Precipitation in {Location} under End-Century RCP4.5 compare to End-Century RCP8.5?
+Answer: The projected {TimePeriod} {Seasonality} {ClimateVariable} in {Location} under {End-Century RCP4.5} is {precipann_rcp45_endc}, which is {COMPARE|precipann_rcp45_endc|precipann_rcp85_endc} than the {TimePeriod} {Seasonality} {ClimateVariable} under {End-Century RCP8.5} of {precipann_rcp85_endc}.
+----------------------------------------
+
+
+--- TYPE 3: SEASONAL/ANNUAL COMPARISON (Same Scenario) ---
+
+Query: How does the historical Annual Average Maximum Temperature in {Location} compare to Winter?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {tempmaxann_hist}, which is {COMPARE|tempmaxann_hist|tempmax_seas_hist_winter} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {tempmax_seas_hist_winter}.
+----------------------------------------
+Query: How does the historical Annual Average Maximum Temperature in {Location} compare to Spring?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {tempmaxann_hist}, which is {COMPARE|tempmaxann_hist|tempmax_seas_hist_spring} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {tempmax_seas_hist_spring}.
+----------------------------------------
+Query: How does the historical Annual Average Maximum Temperature in {Location} compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {tempmaxann_hist}, which is {COMPARE|tempmaxann_hist|tempmax_seas_hist_summer} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {tempmax_seas_hist_summer}.
+----------------------------------------
+Query: How does the historical Annual Average Maximum Temperature in {Location} compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {tempmaxann_hist}, which is {COMPARE|tempmaxann_hist|tempmax_seas_hist_autum} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {tempmax_seas_hist_autum}.
+----------------------------------------
+Query: How does the historical Winter Average Maximum Temperature in {Location} compare to Spring?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {tempmax_seas_hist_winter}, which is {COMPARE|tempmax_seas_hist_winter|tempmax_seas_hist_spring} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {tempmax_seas_hist_spring}.
+----------------------------------------
+Query: How does the historical Winter Average Maximum Temperature in {Location} compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {tempmax_seas_hist_winter}, which is {COMPARE|tempmax_seas_hist_winter|tempmax_seas_hist_summer} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {tempmax_seas_hist_summer}.
+----------------------------------------
+Query: How does the historical Winter Average Maximum Temperature in {Location} compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {tempmax_seas_hist_winter}, which is {COMPARE|tempmax_seas_hist_winter|tempmax_seas_hist_autum} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {tempmax_seas_hist_autum}.
+----------------------------------------
+Query: How does the historical Spring Average Maximum Temperature in {Location} compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {tempmax_seas_hist_spring}, which is {COMPARE|tempmax_seas_hist_spring|tempmax_seas_hist_summer} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {tempmax_seas_hist_summer}.
+----------------------------------------
+Query: How does the historical Spring Average Maximum Temperature in {Location} compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {tempmax_seas_hist_spring}, which is {COMPARE|tempmax_seas_hist_spring|tempmax_seas_hist_autum} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {tempmax_seas_hist_autum}.
+----------------------------------------
+Query: How does the historical Summer Average Maximum Temperature in {Location} compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {tempmax_seas_hist_summer}, which is {COMPARE|tempmax_seas_hist_summer|tempmax_seas_hist_autum} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {tempmax_seas_hist_autum}.
+----------------------------------------
+Query: How does the projected Annual Average Maximum Temperature in {Location} under Mid-Century RCP8.5 compare to Winter?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmaxann_rcp85_midc}, which is {COMPARE|tempmaxann_rcp85_midc|tempmax_seas_rcp85_midc_winter} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmax_seas_rcp85_midc_winter}.
+----------------------------------------
+Query: How does the projected Annual Average Maximum Temperature in {Location} under Mid-Century RCP8.5 compare to Spring?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmaxann_rcp85_midc}, which is {COMPARE|tempmaxann_rcp85_midc|tempmax_seas_rcp85_mid_spring} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmax_seas_rcp85_mid_spring}.
+----------------------------------------
+Query: How does the projected Annual Average Maximum Temperature in {Location} under Mid-Century RCP8.5 compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmaxann_rcp85_midc}, which is {COMPARE|tempmaxann_rcp85_midc|tempmax_seas_rcp85_mid_summer} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmax_seas_rcp85_mid_summer}.
+----------------------------------------
+Query: How does the projected Annual Average Maximum Temperature in {Location} under Mid-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmaxann_rcp85_midc}, which is {COMPARE|tempmaxann_rcp85_midc|tempmax_seas_rcp85_mid_autumn} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmax_seas_rcp85_mid_autumn}.
+----------------------------------------
+Query: How does the projected Winter Average Maximum Temperature in {Location} under Mid-Century RCP8.5 compare to Spring?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_midc_winter}, which is {COMPARE|tempmax_seas_rcp85_midc_winter|tempmax_seas_rcp85_mid_spring} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmax_seas_rcp85_mid_spring}.
+----------------------------------------
+Query: How does the projected Winter Average Maximum Temperature in {Location} under Mid-Century RCP8.5 compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_midc_winter}, which is {COMPARE|tempmax_seas_rcp85_midc_winter|tempmax_seas_rcp85_mid_summer} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmax_seas_rcp85_mid_summer}.
+----------------------------------------
+Query: How does the projected Winter Average Maximum Temperature in {Location} under Mid-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_midc_winter}, which is {COMPARE|tempmax_seas_rcp85_midc_winter|tempmax_seas_rcp85_mid_autumn} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmax_seas_rcp85_mid_autumn}.
+----------------------------------------
+Query: How does the projected Spring Average Maximum Temperature in {Location} under Mid-Century RCP8.5 compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_mid_spring}, which is {COMPARE|tempmax_seas_rcp85_mid_spring|tempmax_seas_rcp85_mid_summer} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmax_seas_rcp85_mid_summer}.
+----------------------------------------
+Query: How does the projected Spring Average Maximum Temperature in {Location} under Mid-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_mid_spring}, which is {COMPARE|tempmax_seas_rcp85_mid_spring|tempmax_seas_rcp85_mid_autumn} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmax_seas_rcp85_mid_autumn}.
+----------------------------------------
+Query: How does the projected Summer Average Maximum Temperature in {Location} under Mid-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_mid_summer}, which is {COMPARE|tempmax_seas_rcp85_mid_summer|tempmax_seas_rcp85_mid_autumn} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmax_seas_rcp85_mid_autumn}.
+----------------------------------------
+Query: How does the projected Annual Average Maximum Temperature in {Location} under End-Century RCP8.5 compare to Winter?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmaxann_rcp85_endc}, which is {COMPARE|tempmaxann_rcp85_endc|tempmax_seas_rcp85_endc_winter} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmax_seas_rcp85_endc_winter}.
+----------------------------------------
+Query: How does the projected Annual Average Maximum Temperature in {Location} under End-Century RCP8.5 compare to Spring?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmaxann_rcp85_endc}, which is {COMPARE|tempmaxann_rcp85_endc|tempmax_seas_rcp85_end_spring} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmax_seas_rcp85_end_spring}.
+----------------------------------------
+Query: How does the projected Annual Average Maximum Temperature in {Location} under End-Century RCP8.5 compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmaxann_rcp85_endc}, which is {COMPARE|tempmaxann_rcp85_endc|tempmax_seas_rcp85_end_summer} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmax_seas_rcp85_end_summer}.
+----------------------------------------
+Query: How does the projected Annual Average Maximum Temperature in {Location} under End-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmaxann_rcp85_endc}, which is {COMPARE|tempmaxann_rcp85_endc|tempmax_seas_rcp85_end_autumn} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmax_seas_rcp85_end_autumn}.
+----------------------------------------
+Query: How does the projected Winter Average Maximum Temperature in {Location} under End-Century RCP8.5 compare to Spring?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_endc_winter}, which is {COMPARE|tempmax_seas_rcp85_endc_winter|tempmax_seas_rcp85_end_spring} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmax_seas_rcp85_end_spring}.
+----------------------------------------
+Query: How does the projected Winter Average Maximum Temperature in {Location} under End-Century RCP8.5 compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_endc_winter}, which is {COMPARE|tempmax_seas_rcp85_endc_winter|tempmax_seas_rcp85_end_summer} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmax_seas_rcp85_end_summer}.
+----------------------------------------
+Query: How does the projected Winter Average Maximum Temperature in {Location} under End-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_endc_winter}, which is {COMPARE|tempmax_seas_rcp85_endc_winter|tempmax_seas_rcp85_end_autumn} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmax_seas_rcp85_end_autumn}.
+----------------------------------------
+Query: How does the projected Spring Average Maximum Temperature in {Location} under End-Century RCP8.5 compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_end_spring}, which is {COMPARE|tempmax_seas_rcp85_end_spring|tempmax_seas_rcp85_end_summer} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmax_seas_rcp85_end_summer}.
+----------------------------------------
+Query: How does the projected Spring Average Maximum Temperature in {Location} under End-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_end_spring}, which is {COMPARE|tempmax_seas_rcp85_end_spring|tempmax_seas_rcp85_end_autumn} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmax_seas_rcp85_end_autumn}.
+----------------------------------------
+Query: How does the projected Summer Average Maximum Temperature in {Location} under End-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_end_summer}, which is {COMPARE|tempmax_seas_rcp85_end_summer|tempmax_seas_rcp85_end_autumn} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmax_seas_rcp85_end_autumn}.
+----------------------------------------
+Query: How does the historical Annual Average Minimum Temperature in {Location} compare to Winter?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {tempminann_hist}, which is {COMPARE|tempminann_hist|tempmin_seas_hist_winter} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {tempmin_seas_hist_winter}.
+----------------------------------------
+Query: How does the historical Annual Average Minimum Temperature in {Location} compare to Spring?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {tempminann_hist}, which is {COMPARE|tempminann_hist|tempmin_seas_hist_spring} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {tempmin_seas_hist_spring}.
+----------------------------------------
+Query: How does the historical Annual Average Minimum Temperature in {Location} compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {tempminann_hist}, which is {COMPARE|tempminann_hist|tempmin_seas_hist_summer} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {tempmin_seas_hist_summer}.
+----------------------------------------
+Query: How does the historical Annual Average Minimum Temperature in {Location} compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {tempminann_hist}, which is {COMPARE|tempminann_hist|tempmin_seas_hist_autum} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {tempmin_seas_hist_autum}.
+----------------------------------------
+Query: How does the historical Winter Average Minimum Temperature in {Location} compare to Spring?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {tempmin_seas_hist_winter}, which is {COMPARE|tempmin_seas_hist_winter|tempmin_seas_hist_spring} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {tempmin_seas_hist_spring}.
+----------------------------------------
+Query: How does the historical Winter Average Minimum Temperature in {Location} compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {tempmin_seas_hist_winter}, which is {COMPARE|tempmin_seas_hist_winter|tempmin_seas_hist_summer} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {tempmin_seas_hist_summer}.
+----------------------------------------
+Query: How does the historical Winter Average Minimum Temperature in {Location} compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {tempmin_seas_hist_winter}, which is {COMPARE|tempmin_seas_hist_winter|tempmin_seas_hist_autum} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {tempmin_seas_hist_autum}.
+----------------------------------------
+Query: How does the historical Spring Average Minimum Temperature in {Location} compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {tempmin_seas_hist_spring}, which is {COMPARE|tempmin_seas_hist_spring|tempmin_seas_hist_summer} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {tempmin_seas_hist_summer}.
+----------------------------------------
+Query: How does the historical Spring Average Minimum Temperature in {Location} compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {tempmin_seas_hist_spring}, which is {COMPARE|tempmin_seas_hist_spring|tempmin_seas_hist_autum} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {tempmin_seas_hist_autum}.
+----------------------------------------
+Query: How does the historical Summer Average Minimum Temperature in {Location} compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {tempmin_seas_hist_summer}, which is {COMPARE|tempmin_seas_hist_summer|tempmin_seas_hist_autum} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {tempmin_seas_hist_autum}.
+----------------------------------------
+Query: How does the projected Annual Average Minimum Temperature in {Location} under Mid-Century RCP8.5 compare to Winter?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempminann_rcp85_midc}, which is {COMPARE|tempminann_rcp85_midc|tempmin_seas_rcp85_midc_winter} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmin_seas_rcp85_midc_winter}.
+----------------------------------------
+Query: How does the projected Annual Average Minimum Temperature in {Location} under Mid-Century RCP8.5 compare to Spring?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempminann_rcp85_midc}, which is {COMPARE|tempminann_rcp85_midc|tempmin_seas_rcp85_mid_spring} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmin_seas_rcp85_mid_spring}.
+----------------------------------------
+Query: How does the projected Annual Average Minimum Temperature in {Location} under Mid-Century RCP8.5 compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempminann_rcp85_midc}, which is {COMPARE|tempminann_rcp85_midc|tempmin_seas_rcp85_mid_summer} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmin_seas_rcp85_mid_summer}.
+----------------------------------------
+Query: How does the projected Annual Average Minimum Temperature in {Location} under Mid-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempminann_rcp85_midc}, which is {COMPARE|tempminann_rcp85_midc|tempmin_seas_rcp85_mid_autumn} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmin_seas_rcp85_mid_autumn}.
+----------------------------------------
+Query: How does the projected Winter Average Minimum Temperature in {Location} under Mid-Century RCP8.5 compare to Spring?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_midc_winter}, which is {COMPARE|tempmin_seas_rcp85_midc_winter|tempmin_seas_rcp85_mid_spring} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmin_seas_rcp85_mid_spring}.
+----------------------------------------
+Query: How does the projected Winter Average Minimum Temperature in {Location} under Mid-Century RCP8.5 compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_midc_winter}, which is {COMPARE|tempmin_seas_rcp85_midc_winter|tempmin_seas_rcp85_mid_summer} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmin_seas_rcp85_mid_summer}.
+----------------------------------------
+Query: How does the projected Winter Average Minimum Temperature in {Location} under Mid-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_midc_winter}, which is {COMPARE|tempmin_seas_rcp85_midc_winter|tempmin_seas_rcp85_mid_autumn} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmin_seas_rcp85_mid_autumn}.
+----------------------------------------
+Query: How does the projected Spring Average Minimum Temperature in {Location} under Mid-Century RCP8.5 compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_mid_spring}, which is {COMPARE|tempmin_seas_rcp85_mid_spring|tempmin_seas_rcp85_mid_summer} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmin_seas_rcp85_mid_summer}.
+----------------------------------------
+Query: How does the projected Spring Average Minimum Temperature in {Location} under Mid-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_mid_spring}, which is {COMPARE|tempmin_seas_rcp85_mid_spring|tempmin_seas_rcp85_mid_autumn} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmin_seas_rcp85_mid_autumn}.
+----------------------------------------
+Query: How does the projected Summer Average Minimum Temperature in {Location} under Mid-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_mid_summer}, which is {COMPARE|tempmin_seas_rcp85_mid_summer|tempmin_seas_rcp85_mid_autumn} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmin_seas_rcp85_mid_autumn}.
+----------------------------------------
+Query: How does the projected Annual Average Minimum Temperature in {Location} under End-Century RCP8.5 compare to Winter?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempminann_rcp85_endc}, which is {COMPARE|tempminann_rcp85_endc|tempmin_seas_rcp85_endc_winter} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmin_seas_rcp85_endc_winter}.
+----------------------------------------
+Query: How does the projected Annual Average Minimum Temperature in {Location} under End-Century RCP8.5 compare to Spring?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempminann_rcp85_endc}, which is {COMPARE|tempminann_rcp85_endc|tempmin_seas_rcp85_end_spring} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmin_seas_rcp85_end_spring}.
+----------------------------------------
+Query: How does the projected Annual Average Minimum Temperature in {Location} under End-Century RCP8.5 compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempminann_rcp85_endc}, which is {COMPARE|tempminann_rcp85_endc|tempmin_seas_rcp85_end_summer} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmin_seas_rcp85_end_summer}.
+----------------------------------------
+Query: How does the projected Annual Average Minimum Temperature in {Location} under End-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempminann_rcp85_endc}, which is {COMPARE|tempminann_rcp85_endc|tempmin_seas_rcp85_end_autumn} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmin_seas_rcp85_end_autumn}.
+----------------------------------------
+Query: How does the projected Winter Average Minimum Temperature in {Location} under End-Century RCP8.5 compare to Spring?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_endc_winter}, which is {COMPARE|tempmin_seas_rcp85_endc_winter|tempmin_seas_rcp85_end_spring} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmin_seas_rcp85_end_spring}.
+----------------------------------------
+Query: How does the projected Winter Average Minimum Temperature in {Location} under End-Century RCP8.5 compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_endc_winter}, which is {COMPARE|tempmin_seas_rcp85_endc_winter|tempmin_seas_rcp85_end_summer} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmin_seas_rcp85_end_summer}.
+----------------------------------------
+Query: How does the projected Winter Average Minimum Temperature in {Location} under End-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_endc_winter}, which is {COMPARE|tempmin_seas_rcp85_endc_winter|tempmin_seas_rcp85_end_autumn} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmin_seas_rcp85_end_autumn}.
+----------------------------------------
+Query: How does the projected Spring Average Minimum Temperature in {Location} under End-Century RCP8.5 compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_end_spring}, which is {COMPARE|tempmin_seas_rcp85_end_spring|tempmin_seas_rcp85_end_summer} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmin_seas_rcp85_end_summer}.
+----------------------------------------
+Query: How does the projected Spring Average Minimum Temperature in {Location} under End-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_end_spring}, which is {COMPARE|tempmin_seas_rcp85_end_spring|tempmin_seas_rcp85_end_autumn} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmin_seas_rcp85_end_autumn}.
+----------------------------------------
+Query: How does the projected Summer Average Minimum Temperature in {Location} under End-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_end_summer}, which is {COMPARE|tempmin_seas_rcp85_end_summer|tempmin_seas_rcp85_end_autumn} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {tempmin_seas_rcp85_end_autumn}.
+----------------------------------------
+Query: How does the historical Winter Fire Weather Index (95th percentile) in {Location} compare to Spring?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {FWIBins_HistWin_95}, which is {COMPARE|FWIBins_HistWin_95|FWIBins_HistSpr_95} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {FWIBins_HistSpr_95}.
+----------------------------------------
+Query: How does the historical Winter Fire Weather Index (95th percentile) in {Location} compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {FWIBins_HistWin_95}, which is {COMPARE|FWIBins_HistWin_95|FWIBins_HistSum_95} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {FWIBins_HistSum_95}.
+----------------------------------------
+Query: How does the historical Winter Fire Weather Index (95th percentile) in {Location} compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {FWIBins_HistWin_95}, which is {COMPARE|FWIBins_HistWin_95|FWIBins_HistAut_95} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {FWIBins_HistAut_95}.
+----------------------------------------
+Query: How does the historical Spring Fire Weather Index (95th percentile) in {Location} compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {FWIBins_HistSpr_95}, which is {COMPARE|FWIBins_HistSpr_95|FWIBins_HistSum_95} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {FWIBins_HistSum_95}.
+----------------------------------------
+Query: How does the historical Spring Fire Weather Index (95th percentile) in {Location} compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {FWIBins_HistSpr_95}, which is {COMPARE|FWIBins_HistSpr_95|FWIBins_HistAut_95} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {FWIBins_HistAut_95}.
+----------------------------------------
+Query: How does the historical Summer Fire Weather Index (95th percentile) in {Location} compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {FWIBins_HistSum_95}, which is {COMPARE|FWIBins_HistSum_95|FWIBins_HistAut_95} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {FWIBins_HistAut_95}.
+----------------------------------------
+Query: How does the projected Winter Fire Weather Index (95th percentile) in {Location} under Mid-Century RCP8.5 compare to Spring?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_MidWin_95}, which is {COMPARE|FWIBins_MidWin_95|FWIBins_MidSpr_95} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {FWIBins_MidSpr_95}.
+----------------------------------------
+Query: How does the projected Winter Fire Weather Index (95th percentile) in {Location} under Mid-Century RCP8.5 compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_MidWin_95}, which is {COMPARE|FWIBins_MidWin_95|FWIBins_MidSum_95} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {FWIBins_MidSum_95}.
+----------------------------------------
+Query: How does the projected Winter Fire Weather Index (95th percentile) in {Location} under Mid-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_MidWin_95}, which is {COMPARE|FWIBins_MidWin_95|FWIBins_MidAut_95} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {FWIBins_MidAut_95}.
+----------------------------------------
+Query: How does the projected Spring Fire Weather Index (95th percentile) in {Location} under Mid-Century RCP8.5 compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_MidSpr_95}, which is {COMPARE|FWIBins_MidSpr_95|FWIBins_MidSum_95} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {FWIBins_MidSum_95}.
+----------------------------------------
+Query: How does the projected Spring Fire Weather Index (95th percentile) in {Location} under Mid-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_MidSpr_95}, which is {COMPARE|FWIBins_MidSpr_95|FWIBins_MidAut_95} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {FWIBins_MidAut_95}.
+----------------------------------------
+Query: How does the projected Summer Fire Weather Index (95th percentile) in {Location} under Mid-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_MidSum_95}, which is {COMPARE|FWIBins_MidSum_95|FWIBins_MidAut_95} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {FWIBins_MidAut_95}.
+----------------------------------------
+Query: How does the projected Winter Fire Weather Index (95th percentile) in {Location} under End-Century RCP8.5 compare to Spring?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_EndWin_95}, which is {COMPARE|FWIBins_EndWin_95|FWIBins_EndSpr_95} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {FWIBins_EndSpr_95}.
+----------------------------------------
+Query: How does the projected Winter Fire Weather Index (95th percentile) in {Location} under End-Century RCP8.5 compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_EndWin_95}, which is {COMPARE|FWIBins_EndWin_95|FWIBins_EndSum_95} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {FWIBins_EndSum_95}.
+----------------------------------------
+Query: How does the projected Winter Fire Weather Index (95th percentile) in {Location} under End-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_EndWin_95}, which is {COMPARE|FWIBins_EndWin_95|FWIBins_EndAut_95} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {FWIBins_EndAut_95}.
+----------------------------------------
+Query: How does the projected Spring Fire Weather Index (95th percentile) in {Location} under End-Century RCP8.5 compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_EndSpr_95}, which is {COMPARE|FWIBins_EndSpr_95|FWIBins_EndSum_95} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {FWIBins_EndSum_95}.
+----------------------------------------
+Query: How does the projected Spring Fire Weather Index (95th percentile) in {Location} under End-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_EndSpr_95}, which is {COMPARE|FWIBins_EndSpr_95|FWIBins_EndAut_95} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {FWIBins_EndAut_95}.
+----------------------------------------
+Query: How does the projected Summer Fire Weather Index (95th percentile) in {Location} under End-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_EndSum_95}, which is {COMPARE|FWIBins_EndSum_95|FWIBins_EndAut_95} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {FWIBins_EndAut_95}.
+----------------------------------------
+Query: How does the historical Winter Fire Weather Index (Class) in {Location} compare to Spring?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {FWIBins_HistWin_NC}, which is {COMPARE|FWIBins_HistWin_NC|FWIBins_HistSpr_NC} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {FWIBins_HistSpr_NC}.
+----------------------------------------
+Query: How does the historical Winter Fire Weather Index (Class) in {Location} compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {FWIBins_HistWin_NC}, which is {COMPARE|FWIBins_HistWin_NC|FWIBins_HistSum_NC} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {FWIBins_HistSum_NC}.
+----------------------------------------
+Query: How does the historical Winter Fire Weather Index (Class) in {Location} compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {FWIBins_HistWin_NC}, which is {COMPARE|FWIBins_HistWin_NC|FWIBins_HistAut_NC} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {FWIBins_HistAut_NC}.
+----------------------------------------
+Query: How does the historical Spring Fire Weather Index (Class) in {Location} compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {FWIBins_HistSpr_NC}, which is {COMPARE|FWIBins_HistSpr_NC|FWIBins_HistSum_NC} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {FWIBins_HistSum_NC}.
+----------------------------------------
+Query: How does the historical Spring Fire Weather Index (Class) in {Location} compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {FWIBins_HistSpr_NC}, which is {COMPARE|FWIBins_HistSpr_NC|FWIBins_HistAut_NC} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {FWIBins_HistAut_NC}.
+----------------------------------------
+Query: How does the historical Summer Fire Weather Index (Class) in {Location} compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} is {FWIBins_HistSum_NC}, which is {COMPARE|FWIBins_HistSum_NC|FWIBins_HistAut_NC} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  of {FWIBins_HistAut_NC}.
+----------------------------------------
+Query: How does the projected Winter Fire Weather Index (Class) in {Location} under Mid-Century RCP8.5 compare to Spring?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_MidWin_NC}, which is {COMPARE|FWIBins_MidWin_NC|FWIBins_MidSpr_NC} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {FWIBins_MidSpr_NC}.
+----------------------------------------
+Query: How does the projected Winter Fire Weather Index (Class) in {Location} under Mid-Century RCP8.5 compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_MidWin_NC}, which is {COMPARE|FWIBins_MidWin_NC|FWIBins_MidSum_NC} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {FWIBins_MidSum_NC}.
+----------------------------------------
+Query: How does the projected Winter Fire Weather Index (Class) in {Location} under Mid-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_MidWin_NC}, which is {COMPARE|FWIBins_MidWin_NC|FWIBins_MidAut_NC} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {FWIBins_MidAut_NC}.
+----------------------------------------
+Query: How does the projected Spring Fire Weather Index (Class) in {Location} under Mid-Century RCP8.5 compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_MidSpr_NC}, which is {COMPARE|FWIBins_MidSpr_NC|FWIBins_MidSum_NC} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {FWIBins_MidSum_NC}.
+----------------------------------------
+Query: How does the projected Spring Fire Weather Index (Class) in {Location} under Mid-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_MidSpr_NC}, which is {COMPARE|FWIBins_MidSpr_NC|FWIBins_MidAut_NC} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {FWIBins_MidAut_NC}.
+----------------------------------------
+Query: How does the projected Summer Fire Weather Index (Class) in {Location} under Mid-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_MidSum_NC}, which is {COMPARE|FWIBins_MidSum_NC|FWIBins_MidAut_NC} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {FWIBins_MidAut_NC}.
+----------------------------------------
+Query: How does the projected Winter Fire Weather Index (Class) in {Location} under End-Century RCP8.5 compare to Spring?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_EndWin_NC}, which is {COMPARE|FWIBins_EndWin_NC|FWIBins_EndSpr_NC} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {FWIBins_EndSpr_NC}.
+----------------------------------------
+Query: How does the projected Winter Fire Weather Index (Class) in {Location} under End-Century RCP8.5 compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_EndWin_NC}, which is {COMPARE|FWIBins_EndWin_NC|FWIBins_EndSum_NC} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {FWIBins_EndSum_NC}.
+----------------------------------------
+Query: How does the projected Winter Fire Weather Index (Class) in {Location} under End-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_EndWin_NC}, which is {COMPARE|FWIBins_EndWin_NC|FWIBins_EndAut_NC} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {FWIBins_EndAut_NC}.
+----------------------------------------
+Query: How does the projected Spring Fire Weather Index (Class) in {Location} under End-Century RCP8.5 compare to Summer?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_EndSpr_NC}, which is {COMPARE|FWIBins_EndSpr_NC|FWIBins_EndSum_NC} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {FWIBins_EndSum_NC}.
+----------------------------------------
+Query: How does the projected Spring Fire Weather Index (Class) in {Location} under End-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_EndSpr_NC}, which is {COMPARE|FWIBins_EndSpr_NC|FWIBins_EndAut_NC} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {FWIBins_EndAut_NC}.
+----------------------------------------
+Query: How does the projected Summer Fire Weather Index (Class) in {Location} under End-Century RCP8.5 compare to Autumn?
+Answer: The {TimePeriod} {Seasonality~1} {ClimateVariable} in {Location} under {RCPscenario} is {FWIBins_EndSum_NC}, which is {COMPARE|FWIBins_EndSum_NC|FWIBins_EndAut_NC} than the {TimePeriod} {Seasonality~2} {ClimateVariable}  under {RCPscenario} of {FWIBins_EndAut_NC}.
+----------------------------------------
+
+
+--- TYPE 4: SEASONAL CONTRIBUTION TO ANNUAL (%) ---
+
+Query: What percentage of the historical annual Average Maximum Temperature in {Location} occurs in Winter?
+Answer: The {TimePeriod} {Seasonality~2} {ClimateVariable} in {Location} is {tempmax_seas_hist_winter}, which accounts for {PERCENTAGE|tempmax_seas_hist_winter|tempmaxann_hist} percent of the annual {ClimateVariable} ({tempmaxann_hist}).
+----------------------------------------
+Query: What percentage of the historical annual Average Maximum Temperature in {Location} occurs in Spring?
+Answer: The {TimePeriod} {Seasonality~2} {ClimateVariable} in {Location} is {tempmax_seas_hist_spring}, which accounts for {PERCENTAGE|tempmax_seas_hist_spring|tempmaxann_hist} percent of the annual {ClimateVariable} ({tempmaxann_hist}).
+----------------------------------------
+Query: What percentage of the historical annual Average Maximum Temperature in {Location} occurs in Summer?
+Answer: The {TimePeriod} {Seasonality~2} {ClimateVariable} in {Location} is {tempmax_seas_hist_summer}, which accounts for {PERCENTAGE|tempmax_seas_hist_summer|tempmaxann_hist} percent of the annual {ClimateVariable} ({tempmaxann_hist}).
+----------------------------------------
+Query: What percentage of the historical annual Average Maximum Temperature in {Location} occurs in Autumn?
+Answer: The {TimePeriod} {Seasonality~2} {ClimateVariable} in {Location} is {tempmax_seas_hist_autum}, which accounts for {PERCENTAGE|tempmax_seas_hist_autum|tempmaxann_hist} percent of the annual {ClimateVariable} ({tempmaxann_hist}).
+----------------------------------------
+Query: What percentage of the projected annual Average Maximum Temperature in {Location} under Mid-Century RCP8.5 occurs in Winter?
+Answer: The {TimePeriod} {Seasonality~2} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_midc_winter}, which accounts for {PERCENTAGE|tempmax_seas_rcp85_midc_winter|tempmaxann_rcp85_midc} percent of the annual {ClimateVariable} ({tempmaxann_rcp85_midc}).
+----------------------------------------
+Query: What percentage of the projected annual Average Maximum Temperature in {Location} under Mid-Century RCP8.5 occurs in Spring?
+Answer: The {TimePeriod} {Seasonality~2} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_mid_spring}, which accounts for {PERCENTAGE|tempmax_seas_rcp85_mid_spring|tempmaxann_rcp85_midc} percent of the annual {ClimateVariable} ({tempmaxann_rcp85_midc}).
+----------------------------------------
+Query: What percentage of the projected annual Average Maximum Temperature in {Location} under Mid-Century RCP8.5 occurs in Summer?
+Answer: The {TimePeriod} {Seasonality~2} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_mid_summer}, which accounts for {PERCENTAGE|tempmax_seas_rcp85_mid_summer|tempmaxann_rcp85_midc} percent of the annual {ClimateVariable} ({tempmaxann_rcp85_midc}).
+----------------------------------------
+Query: What percentage of the projected annual Average Maximum Temperature in {Location} under Mid-Century RCP8.5 occurs in Autumn?
+Answer: The {TimePeriod} {Seasonality~2} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_mid_autumn}, which accounts for {PERCENTAGE|tempmax_seas_rcp85_mid_autumn|tempmaxann_rcp85_midc} percent of the annual {ClimateVariable} ({tempmaxann_rcp85_midc}).
+----------------------------------------
+Query: What percentage of the projected annual Average Maximum Temperature in {Location} under End-Century RCP8.5 occurs in Winter?
+Answer: The {TimePeriod} {Seasonality~2} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_endc_winter}, which accounts for {PERCENTAGE|tempmax_seas_rcp85_endc_winter|tempmaxann_rcp85_endc} percent of the annual {ClimateVariable} ({tempmaxann_rcp85_endc}).
+----------------------------------------
+Query: What percentage of the projected annual Average Maximum Temperature in {Location} under End-Century RCP8.5 occurs in Spring?
+Answer: The {TimePeriod} {Seasonality~2} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_end_spring}, which accounts for {PERCENTAGE|tempmax_seas_rcp85_end_spring|tempmaxann_rcp85_endc} percent of the annual {ClimateVariable} ({tempmaxann_rcp85_endc}).
+----------------------------------------
+Query: What percentage of the projected annual Average Maximum Temperature in {Location} under End-Century RCP8.5 occurs in Summer?
+Answer: The {TimePeriod} {Seasonality~2} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_end_summer}, which accounts for {PERCENTAGE|tempmax_seas_rcp85_end_summer|tempmaxann_rcp85_endc} percent of the annual {ClimateVariable} ({tempmaxann_rcp85_endc}).
+----------------------------------------
+Query: What percentage of the projected annual Average Maximum Temperature in {Location} under End-Century RCP8.5 occurs in Autumn?
+Answer: The {TimePeriod} {Seasonality~2} {ClimateVariable} in {Location} under {RCPscenario} is {tempmax_seas_rcp85_end_autumn}, which accounts for {PERCENTAGE|tempmax_seas_rcp85_end_autumn|tempmaxann_rcp85_endc} percent of the annual {ClimateVariable} ({tempmaxann_rcp85_endc}).
+----------------------------------------
+Query: What percentage of the historical annual Average Minimum Temperature in {Location} occurs in Winter?
+Answer: The {TimePeriod} {Seasonality~2} {ClimateVariable} in {Location} is {tempmin_seas_hist_winter}, which accounts for {PERCENTAGE|tempmin_seas_hist_winter|tempminann_hist} percent of the annual {ClimateVariable} ({tempminann_hist}).
+----------------------------------------
+Query: What percentage of the historical annual Average Minimum Temperature in {Location} occurs in Spring?
+Answer: The {TimePeriod} {Seasonality~2} {ClimateVariable} in {Location} is {tempmin_seas_hist_spring}, which accounts for {PERCENTAGE|tempmin_seas_hist_spring|tempminann_hist} percent of the annual {ClimateVariable} ({tempminann_hist}).
+----------------------------------------
+Query: What percentage of the historical annual Average Minimum Temperature in {Location} occurs in Summer?
+Answer: The {TimePeriod} {Seasonality~2} {ClimateVariable} in {Location} is {tempmin_seas_hist_summer}, which accounts for {PERCENTAGE|tempmin_seas_hist_summer|tempminann_hist} percent of the annual {ClimateVariable} ({tempminann_hist}).
+----------------------------------------
+Query: What percentage of the historical annual Average Minimum Temperature in {Location} occurs in Autumn?
+Answer: The {TimePeriod} {Seasonality~2} {ClimateVariable} in {Location} is {tempmin_seas_hist_autum}, which accounts for {PERCENTAGE|tempmin_seas_hist_autum|tempminann_hist} percent of the annual {ClimateVariable} ({tempminann_hist}).
+----------------------------------------
+Query: What percentage of the projected annual Average Minimum Temperature in {Location} under Mid-Century RCP8.5 occurs in Winter?
+Answer: The {TimePeriod} {Seasonality~2} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_midc_winter}, which accounts for {PERCENTAGE|tempmin_seas_rcp85_midc_winter|tempminann_rcp85_midc} percent of the annual {ClimateVariable} ({tempminann_rcp85_midc}).
+----------------------------------------
+Query: What percentage of the projected annual Average Minimum Temperature in {Location} under Mid-Century RCP8.5 occurs in Spring?
+Answer: The {TimePeriod} {Seasonality~2} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_mid_spring}, which accounts for {PERCENTAGE|tempmin_seas_rcp85_mid_spring|tempminann_rcp85_midc} percent of the annual {ClimateVariable} ({tempminann_rcp85_midc}).
+----------------------------------------
+Query: What percentage of the projected annual Average Minimum Temperature in {Location} under Mid-Century RCP8.5 occurs in Summer?
+Answer: The {TimePeriod} {Seasonality~2} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_mid_summer}, which accounts for {PERCENTAGE|tempmin_seas_rcp85_mid_summer|tempminann_rcp85_midc} percent of the annual {ClimateVariable} ({tempminann_rcp85_midc}).
+----------------------------------------
+Query: What percentage of the projected annual Average Minimum Temperature in {Location} under Mid-Century RCP8.5 occurs in Autumn?
+Answer: The {TimePeriod} {Seasonality~2} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_mid_autumn}, which accounts for {PERCENTAGE|tempmin_seas_rcp85_mid_autumn|tempminann_rcp85_midc} percent of the annual {ClimateVariable} ({tempminann_rcp85_midc}).
+----------------------------------------
+Query: What percentage of the projected annual Average Minimum Temperature in {Location} under End-Century RCP8.5 occurs in Winter?
+Answer: The {TimePeriod} {Seasonality~2} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_endc_winter}, which accounts for {PERCENTAGE|tempmin_seas_rcp85_endc_winter|tempminann_rcp85_endc} percent of the annual {ClimateVariable} ({tempminann_rcp85_endc}).
+----------------------------------------
+Query: What percentage of the projected annual Average Minimum Temperature in {Location} under End-Century RCP8.5 occurs in Spring?
+Answer: The {TimePeriod} {Seasonality~2} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_end_spring}, which accounts for {PERCENTAGE|tempmin_seas_rcp85_end_spring|tempminann_rcp85_endc} percent of the annual {ClimateVariable} ({tempminann_rcp85_endc}).
+----------------------------------------
+Query: What percentage of the projected annual Average Minimum Temperature in {Location} under End-Century RCP8.5 occurs in Summer?
+Answer: The {TimePeriod} {Seasonality~2} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_end_summer}, which accounts for {PERCENTAGE|tempmin_seas_rcp85_end_summer|tempminann_rcp85_endc} percent of the annual {ClimateVariable} ({tempminann_rcp85_endc}).
+----------------------------------------
+Query: What percentage of the projected annual Average Minimum Temperature in {Location} under End-Century RCP8.5 occurs in Autumn?
+Answer: The {TimePeriod} {Seasonality~2} {ClimateVariable} in {Location} under {RCPscenario} is {tempmin_seas_rcp85_end_autumn}, which accounts for {PERCENTAGE|tempmin_seas_rcp85_end_autumn|tempminann_rcp85_endc} percent of the annual {ClimateVariable} ({tempminann_rcp85_endc}).
+----------------------------------------
+
+
+--- TYPE 5: LOCATION COMPARISON ---
+
+Query: How does the historical Annual Heating Degree Days in {Location~1} compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} is {hdd_hist}, which is {COMPARE|hdd_hist|hdd_hist} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} of {hdd_hist}.
+----------------------------------------
+Query: How does the projected Annual Heating Degree Days in {Location~1} under Mid-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {hdd_rcp85_midc}, which is {COMPARE|hdd_rcp85_midc|hdd_rcp85_midc} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {hdd_rcp85_midc}.
+----------------------------------------
+Query: How does the historical Annual Cooling Degree Days in {Location~1} compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} is {cdd_hist}, which is {COMPARE|cdd_hist|cdd_hist} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} of {cdd_hist}.
+----------------------------------------
+Query: How does the projected Annual Cooling Degree Days in {Location~1} under Mid-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {cdd_rcp85_midc}, which is {COMPARE|cdd_rcp85_midc|cdd_rcp85_midc} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {cdd_rcp85_midc}.
+----------------------------------------
+Query: How does the historical Annual Average Maximum Temperature in {Location~1} compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} is {tempmaxann_hist}, which is {COMPARE|tempmaxann_hist|tempmaxann_hist} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} of {tempmaxann_hist}.
+----------------------------------------
+Query: How does the projected Annual Average Maximum Temperature in {Location~1} under Mid-Century RCP4.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {tempmaxann_rcp45_midc}, which is {COMPARE|tempmaxann_rcp45_midc|tempmaxann_rcp45_midc} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {tempmaxann_rcp45_midc}.
+----------------------------------------
+Query: How does the projected Annual Average Maximum Temperature in {Location~1} under Mid-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {tempmaxann_rcp85_midc}, which is {COMPARE|tempmaxann_rcp85_midc|tempmaxann_rcp85_midc} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {tempmaxann_rcp85_midc}.
+----------------------------------------
+Query: How does the projected Annual Average Maximum Temperature in {Location~1} under End-Century RCP4.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {tempmaxann_rcp45_endc}, which is {COMPARE|tempmaxann_rcp45_endc|tempmaxann_rcp45_endc} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {tempmaxann_rcp45_endc}.
+----------------------------------------
+Query: How does the projected Annual Average Maximum Temperature in {Location~1} under End-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {tempmaxann_rcp85_endc}, which is {COMPARE|tempmaxann_rcp85_endc|tempmaxann_rcp85_endc} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {tempmaxann_rcp85_endc}.
+----------------------------------------
+Query: How does the historical Winter Average Maximum Temperature in {Location~1} compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} is {tempmax_seas_hist_winter}, which is {COMPARE|tempmax_seas_hist_winter|tempmax_seas_hist_winter} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} of {tempmax_seas_hist_winter}.
+----------------------------------------
+Query: How does the projected Winter Average Maximum Temperature in {Location~1} under Mid-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {tempmax_seas_rcp85_midc_winter}, which is {COMPARE|tempmax_seas_rcp85_midc_winter|tempmax_seas_rcp85_midc_winter} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {tempmax_seas_rcp85_midc_winter}.
+----------------------------------------
+Query: How does the projected Winter Average Maximum Temperature in {Location~1} under End-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {tempmax_seas_rcp85_endc_winter}, which is {COMPARE|tempmax_seas_rcp85_endc_winter|tempmax_seas_rcp85_endc_winter} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {tempmax_seas_rcp85_endc_winter}.
+----------------------------------------
+Query: How does the historical Spring Average Maximum Temperature in {Location~1} compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} is {tempmax_seas_hist_spring}, which is {COMPARE|tempmax_seas_hist_spring|tempmax_seas_hist_spring} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} of {tempmax_seas_hist_spring}.
+----------------------------------------
+Query: How does the projected Spring Average Maximum Temperature in {Location~1} under Mid-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {tempmax_seas_rcp85_mid_spring}, which is {COMPARE|tempmax_seas_rcp85_mid_spring|tempmax_seas_rcp85_mid_spring} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {tempmax_seas_rcp85_mid_spring}.
+----------------------------------------
+Query: How does the projected Spring Average Maximum Temperature in {Location~1} under End-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {tempmax_seas_rcp85_end_spring}, which is {COMPARE|tempmax_seas_rcp85_end_spring|tempmax_seas_rcp85_end_spring} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {tempmax_seas_rcp85_end_spring}.
+----------------------------------------
+Query: How does the historical Summer Average Maximum Temperature in {Location~1} compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} is {tempmax_seas_hist_summer}, which is {COMPARE|tempmax_seas_hist_summer|tempmax_seas_hist_summer} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} of {tempmax_seas_hist_summer}.
+----------------------------------------
+Query: How does the projected Summer Average Maximum Temperature in {Location~1} under Mid-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {tempmax_seas_rcp85_mid_summer}, which is {COMPARE|tempmax_seas_rcp85_mid_summer|tempmax_seas_rcp85_mid_summer} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {tempmax_seas_rcp85_mid_summer}.
+----------------------------------------
+Query: How does the projected Summer Average Maximum Temperature in {Location~1} under End-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {tempmax_seas_rcp85_end_summer}, which is {COMPARE|tempmax_seas_rcp85_end_summer|tempmax_seas_rcp85_end_summer} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {tempmax_seas_rcp85_end_summer}.
+----------------------------------------
+Query: How does the historical Autumn Average Maximum Temperature in {Location~1} compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} is {tempmax_seas_hist_autum}, which is {COMPARE|tempmax_seas_hist_autum|tempmax_seas_hist_autum} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} of {tempmax_seas_hist_autum}.
+----------------------------------------
+Query: How does the projected Autumn Average Maximum Temperature in {Location~1} under Mid-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {tempmax_seas_rcp85_mid_autumn}, which is {COMPARE|tempmax_seas_rcp85_mid_autumn|tempmax_seas_rcp85_mid_autumn} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {tempmax_seas_rcp85_mid_autumn}.
+----------------------------------------
+Query: How does the projected Autumn Average Maximum Temperature in {Location~1} under End-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {tempmax_seas_rcp85_end_autumn}, which is {COMPARE|tempmax_seas_rcp85_end_autumn|tempmax_seas_rcp85_end_autumn} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {tempmax_seas_rcp85_end_autumn}.
+----------------------------------------
+Query: How does the historical Annual Average Minimum Temperature in {Location~1} compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} is {tempminann_hist}, which is {COMPARE|tempminann_hist|tempminann_hist} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} of {tempminann_hist}.
+----------------------------------------
+Query: How does the projected Annual Average Minimum Temperature in {Location~1} under Mid-Century RCP4.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {tempminann_rcp45_midc}, which is {COMPARE|tempminann_rcp45_midc|tempminann_rcp45_midc} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {tempminann_rcp45_midc}.
+----------------------------------------
+Query: How does the projected Annual Average Minimum Temperature in {Location~1} under Mid-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {tempminann_rcp85_midc}, which is {COMPARE|tempminann_rcp85_midc|tempminann_rcp85_midc} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {tempminann_rcp85_midc}.
+----------------------------------------
+Query: How does the projected Annual Average Minimum Temperature in {Location~1} under End-Century RCP4.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {tempminann_rcp45_endc}, which is {COMPARE|tempminann_rcp45_endc|tempminann_rcp45_endc} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {tempminann_rcp45_endc}.
+----------------------------------------
+Query: How does the projected Annual Average Minimum Temperature in {Location~1} under End-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {tempminann_rcp85_endc}, which is {COMPARE|tempminann_rcp85_endc|tempminann_rcp85_endc} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {tempminann_rcp85_endc}.
+----------------------------------------
+Query: How does the historical Winter Average Minimum Temperature in {Location~1} compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} is {tempmin_seas_hist_winter}, which is {COMPARE|tempmin_seas_hist_winter|tempmin_seas_hist_winter} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} of {tempmin_seas_hist_winter}.
+----------------------------------------
+Query: How does the projected Winter Average Minimum Temperature in {Location~1} under Mid-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {tempmin_seas_rcp85_midc_winter}, which is {COMPARE|tempmin_seas_rcp85_midc_winter|tempmin_seas_rcp85_midc_winter} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {tempmin_seas_rcp85_midc_winter}.
+----------------------------------------
+Query: How does the projected Winter Average Minimum Temperature in {Location~1} under End-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {tempmin_seas_rcp85_endc_winter}, which is {COMPARE|tempmin_seas_rcp85_endc_winter|tempmin_seas_rcp85_endc_winter} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {tempmin_seas_rcp85_endc_winter}.
+----------------------------------------
+Query: How does the historical Spring Average Minimum Temperature in {Location~1} compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} is {tempmin_seas_hist_spring}, which is {COMPARE|tempmin_seas_hist_spring|tempmin_seas_hist_spring} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} of {tempmin_seas_hist_spring}.
+----------------------------------------
+Query: How does the projected Spring Average Minimum Temperature in {Location~1} under Mid-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {tempmin_seas_rcp85_mid_spring}, which is {COMPARE|tempmin_seas_rcp85_mid_spring|tempmin_seas_rcp85_mid_spring} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {tempmin_seas_rcp85_mid_spring}.
+----------------------------------------
+Query: How does the projected Spring Average Minimum Temperature in {Location~1} under End-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {tempmin_seas_rcp85_end_spring}, which is {COMPARE|tempmin_seas_rcp85_end_spring|tempmin_seas_rcp85_end_spring} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {tempmin_seas_rcp85_end_spring}.
+----------------------------------------
+Query: How does the historical Summer Average Minimum Temperature in {Location~1} compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} is {tempmin_seas_hist_summer}, which is {COMPARE|tempmin_seas_hist_summer|tempmin_seas_hist_summer} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} of {tempmin_seas_hist_summer}.
+----------------------------------------
+Query: How does the projected Summer Average Minimum Temperature in {Location~1} under Mid-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {tempmin_seas_rcp85_mid_summer}, which is {COMPARE|tempmin_seas_rcp85_mid_summer|tempmin_seas_rcp85_mid_summer} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {tempmin_seas_rcp85_mid_summer}.
+----------------------------------------
+Query: How does the projected Summer Average Minimum Temperature in {Location~1} under End-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {tempmin_seas_rcp85_end_summer}, which is {COMPARE|tempmin_seas_rcp85_end_summer|tempmin_seas_rcp85_end_summer} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {tempmin_seas_rcp85_end_summer}.
+----------------------------------------
+Query: How does the historical Autumn Average Minimum Temperature in {Location~1} compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} is {tempmin_seas_hist_autum}, which is {COMPARE|tempmin_seas_hist_autum|tempmin_seas_hist_autum} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} of {tempmin_seas_hist_autum}.
+----------------------------------------
+Query: How does the projected Autumn Average Minimum Temperature in {Location~1} under Mid-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {tempmin_seas_rcp85_mid_autumn}, which is {COMPARE|tempmin_seas_rcp85_mid_autumn|tempmin_seas_rcp85_mid_autumn} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {tempmin_seas_rcp85_mid_autumn}.
+----------------------------------------
+Query: How does the projected Autumn Average Minimum Temperature in {Location~1} under End-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {tempmin_seas_rcp85_end_autumn}, which is {COMPARE|tempmin_seas_rcp85_end_autumn|tempmin_seas_rcp85_end_autumn} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {tempmin_seas_rcp85_end_autumn}.
+----------------------------------------
+Query: How does the historical Annual Wind Speed in {Location~1} compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} is {windspeed_hist}, which is {COMPARE|windspeed_hist|windspeed_hist} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} of {windspeed_hist}.
+----------------------------------------
+Query: How does the projected Annual Wind Speed in {Location~1} under Mid-Century RCP4.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {windspeed_rcp45_midc}, which is {COMPARE|windspeed_rcp45_midc|windspeed_rcp45_midc} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {windspeed_rcp45_midc}.
+----------------------------------------
+Query: How does the projected Annual Wind Speed in {Location~1} under Mid-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {windspeed_rcp85_midc}, which is {COMPARE|windspeed_rcp85_midc|windspeed_rcp85_midc} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {windspeed_rcp85_midc}.
+----------------------------------------
+Query: How does the projected Annual Wind Speed in {Location~1} under End-Century RCP4.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {windspeed_rcp45_endc}, which is {COMPARE|windspeed_rcp45_endc|windspeed_rcp45_endc} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {windspeed_rcp45_endc}.
+----------------------------------------
+Query: How does the projected Annual Wind Speed in {Location~1} under End-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {windspeed_rcp85_endc}, which is {COMPARE|windspeed_rcp85_endc|windspeed_rcp85_endc} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {windspeed_rcp85_endc}.
+----------------------------------------
+Query: How does the historical Winter Fire Weather Index (95th percentile) in {Location~1} compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} is {FWIBins_HistWin_95}, which is {COMPARE|FWIBins_HistWin_95|FWIBins_HistWin_95} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} of {FWIBins_HistWin_95}.
+----------------------------------------
+Query: How does the projected Winter Fire Weather Index (95th percentile) in {Location~1} under Mid-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {FWIBins_MidWin_95}, which is {COMPARE|FWIBins_MidWin_95|FWIBins_MidWin_95} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {FWIBins_MidWin_95}.
+----------------------------------------
+Query: How does the projected Winter Fire Weather Index (95th percentile) in {Location~1} under End-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {FWIBins_EndWin_95}, which is {COMPARE|FWIBins_EndWin_95|FWIBins_EndWin_95} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {FWIBins_EndWin_95}.
+----------------------------------------
+Query: How does the historical Spring Fire Weather Index (95th percentile) in {Location~1} compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} is {FWIBins_HistSpr_95}, which is {COMPARE|FWIBins_HistSpr_95|FWIBins_HistSpr_95} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} of {FWIBins_HistSpr_95}.
+----------------------------------------
+Query: How does the projected Spring Fire Weather Index (95th percentile) in {Location~1} under Mid-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {FWIBins_MidSpr_95}, which is {COMPARE|FWIBins_MidSpr_95|FWIBins_MidSpr_95} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {FWIBins_MidSpr_95}.
+----------------------------------------
+Query: How does the projected Spring Fire Weather Index (95th percentile) in {Location~1} under End-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {FWIBins_EndSpr_95}, which is {COMPARE|FWIBins_EndSpr_95|FWIBins_EndSpr_95} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {FWIBins_EndSpr_95}.
+----------------------------------------
+Query: How does the historical Summer Fire Weather Index (95th percentile) in {Location~1} compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} is {FWIBins_HistSum_95}, which is {COMPARE|FWIBins_HistSum_95|FWIBins_HistSum_95} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} of {FWIBins_HistSum_95}.
+----------------------------------------
+Query: How does the projected Summer Fire Weather Index (95th percentile) in {Location~1} under Mid-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {FWIBins_MidSum_95}, which is {COMPARE|FWIBins_MidSum_95|FWIBins_MidSum_95} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {FWIBins_MidSum_95}.
+----------------------------------------
+Query: How does the projected Summer Fire Weather Index (95th percentile) in {Location~1} under End-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {FWIBins_EndSum_95}, which is {COMPARE|FWIBins_EndSum_95|FWIBins_EndSum_95} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {FWIBins_EndSum_95}.
+----------------------------------------
+Query: How does the historical Autumn Fire Weather Index (95th percentile) in {Location~1} compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} is {FWIBins_HistAut_95}, which is {COMPARE|FWIBins_HistAut_95|FWIBins_HistAut_95} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} of {FWIBins_HistAut_95}.
+----------------------------------------
+Query: How does the projected Autumn Fire Weather Index (95th percentile) in {Location~1} under Mid-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {FWIBins_MidAut_95}, which is {COMPARE|FWIBins_MidAut_95|FWIBins_MidAut_95} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {FWIBins_MidAut_95}.
+----------------------------------------
+Query: How does the projected Autumn Fire Weather Index (95th percentile) in {Location~1} under End-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {FWIBins_EndAut_95}, which is {COMPARE|FWIBins_EndAut_95|FWIBins_EndAut_95} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {FWIBins_EndAut_95}.
+----------------------------------------
+Query: How does the historical Winter Fire Weather Index (Class) in {Location~1} compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} is {FWIBins_HistWin_NC}, which is {COMPARE|FWIBins_HistWin_NC|FWIBins_HistWin_NC} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} of {FWIBins_HistWin_NC}.
+----------------------------------------
+Query: How does the projected Winter Fire Weather Index (Class) in {Location~1} under Mid-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {FWIBins_MidWin_NC}, which is {COMPARE|FWIBins_MidWin_NC|FWIBins_MidWin_NC} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {FWIBins_MidWin_NC}.
+----------------------------------------
+Query: How does the projected Winter Fire Weather Index (Class) in {Location~1} under End-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {FWIBins_EndWin_NC}, which is {COMPARE|FWIBins_EndWin_NC|FWIBins_EndWin_NC} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {FWIBins_EndWin_NC}.
+----------------------------------------
+Query: How does the historical Spring Fire Weather Index (Class) in {Location~1} compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} is {FWIBins_HistSpr_NC}, which is {COMPARE|FWIBins_HistSpr_NC|FWIBins_HistSpr_NC} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} of {FWIBins_HistSpr_NC}.
+----------------------------------------
+Query: How does the projected Spring Fire Weather Index (Class) in {Location~1} under Mid-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {FWIBins_MidSpr_NC}, which is {COMPARE|FWIBins_MidSpr_NC|FWIBins_MidSpr_NC} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {FWIBins_MidSpr_NC}.
+----------------------------------------
+Query: How does the projected Spring Fire Weather Index (Class) in {Location~1} under End-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {FWIBins_EndSpr_NC}, which is {COMPARE|FWIBins_EndSpr_NC|FWIBins_EndSpr_NC} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {FWIBins_EndSpr_NC}.
+----------------------------------------
+Query: How does the historical Summer Fire Weather Index (Class) in {Location~1} compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} is {FWIBins_HistSum_NC}, which is {COMPARE|FWIBins_HistSum_NC|FWIBins_HistSum_NC} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} of {FWIBins_HistSum_NC}.
+----------------------------------------
+Query: How does the projected Summer Fire Weather Index (Class) in {Location~1} under Mid-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {FWIBins_MidSum_NC}, which is {COMPARE|FWIBins_MidSum_NC|FWIBins_MidSum_NC} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {FWIBins_MidSum_NC}.
+----------------------------------------
+Query: How does the projected Summer Fire Weather Index (Class) in {Location~1} under End-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {FWIBins_EndSum_NC}, which is {COMPARE|FWIBins_EndSum_NC|FWIBins_EndSum_NC} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {FWIBins_EndSum_NC}.
+----------------------------------------
+Query: How does the historical Autumn Fire Weather Index (Class) in {Location~1} compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} is {FWIBins_HistAut_NC}, which is {COMPARE|FWIBins_HistAut_NC|FWIBins_HistAut_NC} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} of {FWIBins_HistAut_NC}.
+----------------------------------------
+Query: How does the projected Autumn Fire Weather Index (Class) in {Location~1} under Mid-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {FWIBins_MidAut_NC}, which is {COMPARE|FWIBins_MidAut_NC|FWIBins_MidAut_NC} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {FWIBins_MidAut_NC}.
+----------------------------------------
+Query: How does the projected Autumn Fire Weather Index (Class) in {Location~1} under End-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {FWIBins_EndAut_NC}, which is {COMPARE|FWIBins_EndAut_NC|FWIBins_EndAut_NC} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {FWIBins_EndAut_NC}.
+----------------------------------------
+Query: How does the historical Annual Days without Precipitation in {Location~1} compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} is {noprecip_hist}, which is {COMPARE|noprecip_hist|noprecip_hist} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} of {noprecip_hist}.
+----------------------------------------
+Query: How does the projected Annual Days without Precipitation in {Location~1} under Mid-Century RCP4.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {noprecip_rcp45_midc}, which is {COMPARE|noprecip_rcp45_midc|noprecip_rcp45_midc} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {noprecip_rcp45_midc}.
+----------------------------------------
+Query: How does the projected Annual Days without Precipitation in {Location~1} under Mid-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {noprecip_rcp85_midc}, which is {COMPARE|noprecip_rcp85_midc|noprecip_rcp85_midc} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {noprecip_rcp85_midc}.
+----------------------------------------
+Query: How does the projected Annual Days without Precipitation in {Location~1} under End-Century RCP4.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {noprecip_rcp45_endc}, which is {COMPARE|noprecip_rcp45_endc|noprecip_rcp45_endc} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {noprecip_rcp45_endc}.
+----------------------------------------
+Query: How does the projected Annual Days without Precipitation in {Location~1} under End-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {noprecip_rcp85_endc}, which is {COMPARE|noprecip_rcp85_endc|noprecip_rcp85_endc} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {noprecip_rcp85_endc}.
+----------------------------------------
+Query: How does the historical Annual Total Precipitation in {Location~1} compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} is {precipann_hist}, which is {COMPARE|precipann_hist|precipann_hist} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} of {precipann_hist}.
+----------------------------------------
+Query: How does the projected Annual Total Precipitation in {Location~1} under Mid-Century RCP4.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {precipann_rcp45_midc}, which is {COMPARE|precipann_rcp45_midc|precipann_rcp45_midc} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {precipann_rcp45_midc}.
+----------------------------------------
+Query: How does the projected Annual Total Precipitation in {Location~1} under Mid-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {precipann_rcp85_midc}, which is {COMPARE|precipann_rcp85_midc|precipann_rcp85_midc} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {precipann_rcp85_midc}.
+----------------------------------------
+Query: How does the projected Annual Total Precipitation in {Location~1} under End-Century RCP4.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {precipann_rcp45_endc}, which is {COMPARE|precipann_rcp45_endc|precipann_rcp45_endc} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {precipann_rcp45_endc}.
+----------------------------------------
+Query: How does the projected Annual Total Precipitation in {Location~1} under End-Century RCP8.5 compare to {Location~2}?
+Answer: The {TimePeriod} {Seasonality} {ClimateVariable} in {Location~1} under {RCPscenario} is {precipann_rcp85_endc}, which is {COMPARE|precipann_rcp85_endc|precipann_rcp85_endc} than the {TimePeriod} {Seasonality} {ClimateVariable} in {Location~2} under {RCPscenario} of {precipann_rcp85_endc}.
+----------------------------------------
