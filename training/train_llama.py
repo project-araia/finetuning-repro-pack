@@ -1,206 +1,186 @@
 import os
-from unsloth import FastLanguageModel
 import torch
-from transformers import TextStreamer
+import matplotlib.pyplot as plt
+from unsloth import FastLanguageModel
 from datasets import load_dataset
-from trl import SFTTrainer
-from transformers import TrainingArguments
+from trl import SFTTrainer, SFTConfig
 from unsloth import is_bfloat16_supported
+from unsloth.chat_templates import get_chat_template
 
-max_seq_length = 8000 # Choose any! We auto support RoPE Scaling internally!
-dtype = None # None for auto detection. Float16 for Tesla T4, V100, Bfloat16 for Ampere+
-load_in_4bit = True # Use 4bit quantization to reduce memory usage. Can be False.
-
-# 4bit pre quantized models we support for 4x faster downloading + no OOMs.
-fourbit_models = [
-    "unsloth/Meta-Llama-3.1-8B-bnb-4bit",      # Llama-3.1 15 trillion tokens model 2x faster!
-    "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
-    "unsloth/Meta-Llama-3.1-70B-bnb-4bit",
-    "unsloth/Meta-Llama-3.1-405B-bnb-4bit",    # We also uploaded 4bit for 405b!
-    "unsloth/Mistral-Nemo-Base-2407-bnb-4bit", # New Mistral 12b 2x faster!
-    "unsloth/Mistral-Nemo-Instruct-2407-bnb-4bit",
-    "unsloth/mistral-7b-v0.3-bnb-4bit",        # Mistral v3 2x faster!
-    "unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
-    "unsloth/Phi-3.5-mini-instruct",           # Phi-3.5 2x faster!
-    "unsloth/Phi-3-medium-4k-instruct",
-    "unsloth/gemma-2-9b-bnb-4bit",
-    "unsloth/gemma-2-27b-bnb-4bit",            # Gemma 2x faster!
-] # More models at https://huggingface.co/unsloth
+max_seq_length = 16384 
+dtype = None 
+load_in_4bit = True 
 
 model, tokenizer = FastLanguageModel.from_pretrained(
-    model_name = "unsloth/Meta-Llama-3.1-8B",
+    model_name = "unsloth/Meta-Llama-3.1-8B-Instruct", 
     max_seq_length = max_seq_length,
     dtype = dtype,
     load_in_4bit = load_in_4bit,
-    device_map="auto",
-    #load_in_4bit=False,  # Don't use 4-bit quantization (not needed for CPU)
-    #device_map={"": "cpu"},  # Force entire model to CPU
-    # local_files_only = True,
-    # token = "hf_...", # use one if using gated models like meta-llama/Llama-2-7b-hf
 )
-
-"""We now add LoRA adapters so we only need to update 1 to 10% of all parameters!"""
 
 model = FastLanguageModel.get_peft_model(
     model,
-    r = 16, # Choose any number > 0 ! Suggested 8, 16, 32, 64, 128
-    target_modules = ["q_proj", "k_proj", "v_proj", "o_proj",
-                      "gate_proj", "up_proj", "down_proj",],
+    r = 16,
+    target_modules = ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
     lora_alpha = 16,
-    lora_dropout = 0, # Supports any, but = 0 is optimized
-    bias = "none",    # Supports any, but = "none" is optimized
-    # [NEW] "unsloth" uses 30% less VRAM, fits 2x larger batch sizes!
-    use_gradient_checkpointing = "unsloth", # True or "unsloth" for very long context
+    lora_dropout = 0, 
+    bias = "none",    
+    use_gradient_checkpointing = "unsloth", 
     random_state = 3407,
-    use_rslora = False,  # We support rank stabilized LoRA
-    loftq_config = None, # And LoftQ
 )
 
-araia_prompt = """\nBelow is a User query that describes a task or a question, paired with an Input along with its context.
-                  \nWrite the Assitant's response that appropriately completes the request. If the Input is missing you should ignore it. 
+tokenizer = get_chat_template(tokenizer, chat_template = "llama-3.1")
 
-### User:
-{}
+def extract_location_names(input_data):
+    """Extracts location names from potential data schemas, maintaining order and removing duplicates."""
+    names = []
+    if isinstance(input_data, list):
+        for entry in input_data:
+            name = entry.get("location") or entry.get("params", {}).get("location_name")
+            if name:
+                names.append(name)
+    return list(dict.fromkeys(names))
 
-### Input:
-{}
+def flatten_dict(d, parent_key='', sep=' - '):
+    """Recursively flattens nested dictionaries and lists."""
+    items = []
+    if isinstance(d, dict):
+        for k, v in d.items():
+            new_key = f"{parent_key}{sep}{k}" if parent_key else str(k)
+            if isinstance(v, (dict, list)):
+                items.extend(flatten_dict(v, new_key, sep=sep).items())
+            else:
+                items.append((new_key, v))
+    elif isinstance(d, list):
+        for i, v in enumerate(d):
+            new_key = f"{parent_key}{sep}{i}" if parent_key else str(i)
+            if isinstance(v, (dict, list)):
+                items.extend(flatten_dict(v, new_key, sep=sep).items())
+            else:
+                items.append((new_key, v))
+    return dict(items)
 
-### Assistant:
-{}"""
+def format_flattened_string(data_obj):
+    """Converts a flattened dictionary into a structured, anchored string with double spacing."""
+    if not isinstance(data_obj, list):
+        return str(data_obj)
 
+    city_map = {}
+    for i, entry in enumerate(data_obj):
+        name = entry.get("location") or entry.get("params", {}).get("location_name")
+        if not name:
+            name = f"Location {i}"
+        city_map[str(i)] = str(name).upper()
 
-EOS_TOKEN = tokenizer.eos_token # Must add EOS_TOKEN
+    flattened = flatten_dict(data_obj)
+    lines = []
+    last_idx = None
+    sorted_keys = sorted(flattened.keys())
+
+    for k in sorted_keys:
+        v = flattened[k]
+        parts = k.split(' - ')
+        current_idx = parts[0]
+
+        if last_idx is not None and current_idx != last_idx:
+            lines.append("") 
+
+        city_prefix = city_map.get(current_idx, current_idx)
+        new_key = k.replace(f"{current_idx} - ", f"[{city_prefix}] - ", 1)
+        
+        lines.append(f"• {new_key}: {v}")
+        last_idx = current_idx
+
+    return "\n".join(lines)
+
 def formatting_prompts_func(examples):
-    queries = examples["user"]
-    outputs = examples["assistant"]
+    prompts = []
+    completions = []
+    
+    for query, input_data, output in zip(examples["user"], examples.get("input", [""]*len(examples["user"])), examples["assistant"]):
+        found_locations = extract_location_names(input_data)
+        location_header = "\n".join(found_locations) if found_locations else "None Identified"
+        
+        flat_input = format_flattened_string(input_data)
+        
+        system_content = (
+            "You are a precision data analyst. Your task is to:\n"
+            "1. For each Location listed in the Target Locations, extract the exact numerical value from the relevant context block.\n"
+            "2. If you are unable to extract the exact value from the context, explicitly say 'missing that value'.\n"
+            "Finally. Answer the user query in natural language using those specific values.\n"
+            "Do NOT repeat the Context data. Only output the final answer."
+        )
 
-    if "input" in examples:
-        inputs = examples["input"]
-    else:
-        inputs = [""]*len(queries)
- 
-    texts = []
-    for query, input, output in zip(queries, inputs, outputs):
-        # Must add EOS_TOKEN, otherwise your generation will go on forever!
-        text = araia_prompt.format(query, input, output) + EOS_TOKEN
-        texts.append(text)
-    return { "text" : texts, }
-pass
+        messages = [
+            {"role": "system", "content": system_content},
+            {
+                "role": "user", 
+                "content": f"{query}\n\n### Target Locations:\n{location_header}\n\n### Context:\n{flat_input}"
+            }
+        ]
+        
+        prompt_text = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+        completion_text = f"{output}{tokenizer.eos_token}"
+        
+        prompts.append(prompt_text)
+        completions.append(completion_text)
+        
+    return { "prompt" : prompts, "completion" : completions }
 
-training_dataset = f'{os.getenv("PROJECT_HOME")}/datasets/ClimRR_Dataset_Train_filtered_new_n_final_n.json'
+# --- DATASET LOADING ---
+# TODO: Replace with the path to your dataset
+dataset_path = "data/your_dataset.json" 
+dataset = load_dataset("json", data_files=dataset_path)["train"]
+dataset = dataset.map(formatting_prompts_func, batched = True)
 
-dataset = load_dataset("json", data_files=training_dataset)["train"]
-print(dataset)
-dataset = dataset.map(formatting_prompts_func, batched = True,)
+def unsloth_pass_through(example):
+    return { "text" : example["prompt"] + example["completion"] }
 
+dataset = dataset.map(unsloth_pass_through)
+
+# --- TRAINING ---
 trainer = SFTTrainer(
     model = model,
     tokenizer = tokenizer,
     train_dataset = dataset,
     dataset_text_field = "text",
     max_seq_length = max_seq_length,
-    dataset_num_proc = 2,
-    packing = False, # Can make training 5x faster for short sequences.
-    args = TrainingArguments(
+    packing = False,
+    args = SFTConfig(
+        completion_only_loss = True,
         per_device_train_batch_size = 2,
         gradient_accumulation_steps = 4,
-        warmup_steps = 5,
-        # num_train_epochs = 1, # Set this for 1 full training run.
-        max_steps = 60,
-        learning_rate = 2e-4,
+        warmup_steps = 10,
+        num_train_epochs = 2, 
+        learning_rate = 5e-5,
+        weight_decay = 0.05,
         fp16 = not is_bfloat16_supported(),
         bf16 = is_bfloat16_supported(),
-        logging_steps = 1,
+        logging_steps = 5,
         optim = "adamw_8bit",
-        weight_decay = 0.01,
-        lr_scheduler_type = "linear",
-        seed = 3407,
         output_dir = "outputs",
-        report_to = "none", # Use this for WandB etc
-        #use_cpu=True,
+        report_to = "none",
     ),
 )
 
-# @title Show current memory stats
-gpu_stats = torch.cuda.get_device_properties(0)
-start_gpu_memory = round(torch.cuda.max_memory_reserved() / 1024 / 1024 / 1024, 3)
-max_memory = round(gpu_stats.total_memory / 1024 / 1024 / 1024, 3)
-print(f"GPU = {gpu_stats.name}. Max memory = {max_memory} GB.")
-print(f"{start_gpu_memory} GB of memory reserved.")
+trainer.train()
 
-trainer_stats = trainer.train()
-
-# @title Show final memory and time stats
-used_memory = round(torch.cuda.max_memory_reserved() / 1024 / 1024 / 1024, 3)
-used_memory_for_lora = round(used_memory - start_gpu_memory, 3)
-used_percentage = round(used_memory / max_memory * 100, 3)
-lora_percentage = round(used_memory_for_lora / max_memory * 100, 3)
-print(f"{trainer_stats.metrics['train_runtime']} seconds used for training.")
-print(f"{round(trainer_stats.metrics['train_runtime']/60, 2)} minutes used for training.")
-print(f"Peak reserved memory = {used_memory} GB.")
-print(f"Peak reserved memory for training = {used_memory_for_lora} GB.")
-print(f"Peak reserved memory % of max memory = {used_percentage} %.")
-print(f"Peak reserved memory for training % of max memory = {lora_percentage} %.")
-
-# araia_prompt_train = Copied from above
-FastLanguageModel.for_inference(model) # Enable native 2x faster inference
-
-model.save_pretrained("lora_model")  # Local saving
+model.save_pretrained("lora_model")
 tokenizer.save_pretrained("lora_model")
-# model.push_to_hub("your_name/lora_model", token = "...") # Online saving
-# tokenizer.push_to_hub("your_name/lora_model", token = "...") # Online saving
 
-if False:
-    from unsloth import FastLanguageModel
-    model, tokenizer = FastLanguageModel.from_pretrained(
-        model_name = "lora_model", # YOUR MODEL YOU USED FOR TRAINING
-        max_seq_length = max_seq_length,
-        dtype = dtype,
-        load_in_4bit = load_in_4bit,
-    )
-    FastLanguageModel.for_inference(model) # Enable native 2x faster inference
+# --- PLOTTING ---
+history = trainer.state.log_history
+epochs = [x['epoch'] for x in history if 'loss' in x]
+loss = [x['loss'] for x in history if 'loss' in x]
 
-if False:
-    # I highly do NOT suggest - use Unsloth if possible
-    from peft import AutoPeftModelForCausalLM
-    from transformers import AutoTokenizer
-    model = AutoPeftModelForCausalLM.from_pretrained(
-        "lora_model", # YOUR MODEL YOU USED FOR TRAINING
-        load_in_4bit = load_in_4bit,
-    )
-    tokenizer = AutoTokenizer.from_pretrained("lora_model")
-
-# Merge to 16bit
-if False: model.save_pretrained_merged("model", tokenizer, save_method = "merged_16bit",)
-if False: model.push_to_hub_merged("hf/model", tokenizer, save_method = "merged_16bit", token = "")
-
-# Merge to 4bit
-if False: model.save_pretrained_merged("model", tokenizer, save_method = "merged_4bit",)
-if False: model.push_to_hub_merged("hf/model", tokenizer, save_method = "merged_4bit", token = "")
-
-# Just LoRA adapters
-if False: model.save_pretrained_merged("model", tokenizer, save_method = "lora",)
-if False: model.push_to_hub_merged("hf/model", tokenizer, save_method = "lora", token = "")
-
-# Save to 8bit Q8_0
-if False: model.save_pretrained_gguf("model", tokenizer,)
-# Remember to go to https://huggingface.co/settings/tokens for a token!
-# And change hf to your username!
-if False: model.push_to_hub_gguf("hf/model", tokenizer, token = "")
-
-# Save to 16bit GGUF
-if False: model.save_pretrained_gguf("model", tokenizer, quantization_method = "f16")
-if False: model.push_to_hub_gguf("hf/model", tokenizer, quantization_method = "f16", token = "")
-
-# Save to q4_k_m GGUF
-if False: model.save_pretrained_gguf("model", tokenizer, quantization_method = "q4_k_m")
-if False: model.push_to_hub_gguf("hf/model", tokenizer, quantization_method = "q4_k_m", token = "")
-
-# Save to multiple GGUF options - much faster if you want multiple!
-if False:
-    model.push_to_hub_gguf(
-        "hf/model", # Change hf to your username!
-        tokenizer,
-        quantization_method = ["q4_k_m", "q8_0", "q5_k_m",],
-        token = "",
-    )
+if epochs:
+    plt.figure(figsize=(10, 6))
+    plt.plot(epochs, loss, 'r-', label='Training Loss')
+    plt.xlabel('Epochs')
+    plt.ylabel('Loss')
+    plt.title('Training Loss (Completion Only)')
+    plt.grid(True)
+    
+    # Save output graph
+    plt.savefig("loss_curve.png")
+    print("Graph saved as loss_curve.png")

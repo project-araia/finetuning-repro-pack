@@ -1,22 +1,16 @@
 import os
 import json
-from unsloth import FastLanguageModel
 import torch
-from transformers import TextStreamer
+from unsloth import FastLanguageModel
 from datasets import load_dataset
-from trl import SFTTrainer
-from transformers import TrainingArguments
-from unsloth import is_bfloat16_supported
+from unsloth.chat_templates import get_chat_template
 
-
-# Append only the last generated entry to JSON file safely
 def append_last_entry(filename, new_entries):
+    """Appends only the last generated entry to a JSON file safely."""
     if not new_entries:
         return
-
     last_entry = new_entries[-1]
-
-    # Read existing entries if file exists
+    existing = []
     if os.path.exists(filename):
         with open(filename, "r") as f:
             try:
@@ -25,98 +19,160 @@ def append_last_entry(filename, new_entries):
                 existing = []
     else:
         existing = []
-
-    # Append and write back
+    
     existing.append(last_entry)
     with open(filename, "w") as f:
         json.dump(existing, f, indent=2)
 
+def extract_location_names(input_data):
+    """Extracts location names from potential data schemas, maintaining order and removing duplicates."""
+    names = []
+    if isinstance(input_data, list):
+        for entry in input_data:
+            name = entry.get("location") or entry.get("params", {}).get("location_name")
+            if name:
+                names.append(name)
+    return list(dict.fromkeys(names))
 
-max_seq_length = 8000 # Choose any! We auto support RoPE Scaling internally!
-dtype = None # None for auto detection. Float16 for Tesla T4, V100, Bfloat16 for Ampere+
-load_in_4bit = True # Use 4bit quantization to reduce memory usage. Can be False.
+def flatten_dict(d, parent_key='', sep=' - '):
+    """Recursively flattens nested dictionaries and lists."""
+    items = []
+    if isinstance(d, dict):
+        for k, v in d.items():
+            new_key = f"{parent_key}{sep}{k}" if parent_key else str(k)
+            if isinstance(v, (dict, list)):
+                items.extend(flatten_dict(v, new_key, sep=sep).items())
+            else:
+                items.append((new_key, v))
+    elif isinstance(d, list):
+        for i, v in enumerate(d):
+            new_key = f"{parent_key}{sep}{i}" if parent_key else str(i)
+            if isinstance(v, (dict, list)):
+                items.extend(flatten_dict(v, new_key, sep=sep).items())
+            else:
+                items.append((new_key, v))
+    return dict(items)
 
-# ------------------------
-output_file =  f'{os.getenv("PROJECT_HOME")}/evaluations/Evaluation_BASE_LLAMA_31_8B.json'
+def format_flattened_string(data_obj):
+    """Converts a flattened dictionary into a structured, anchored string with double spacing."""
+    if not isinstance(data_obj, list):
+        return str(data_obj)
 
-# 4bit pre quantized models we support for 4x faster downloading + no OOMs.
-fourbit_models = [
-    "unsloth/Meta-Llama-3.1-8B-bnb-4bit",      # Llama-3.1 15 trillion tokens model 2x faster!
-    "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
-    "unsloth/Meta-Llama-3.1-70B-bnb-4bit",
-    "unsloth/Meta-Llama-3.1-405B-bnb-4bit",    # We also uploaded 4bit for 405b!
-    "unsloth/Mistral-Nemo-Base-2407-bnb-4bit", # New Mistral 12b 2x faster!
-    "unsloth/Mistral-Nemo-Instruct-2407-bnb-4bit",
-    "unsloth/mistral-7b-v0.3-bnb-4bit",        # Mistral v3 2x faster!
-    "unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
-    "unsloth/Phi-3.5-mini-instruct",           # Phi-3.5 2x faster!
-    "unsloth/Phi-3-medium-4k-instruct",
-    "unsloth/gemma-2-9b-bnb-4bit",
-    "unsloth/gemma-2-27b-bnb-4bit",            # Gemma 2x faster!
-] # More models at https://huggingface.co/unsloth
+    city_map = {}
+    for i, entry in enumerate(data_obj):
+        name = entry.get("location") or entry.get("params", {}).get("location_name")
+        if not name:
+            name = f"Location {i}"
+        city_map[str(i)] = str(name).upper()
 
+    flattened = flatten_dict(data_obj)
+    lines = []
+    last_idx = None
+    sorted_keys = sorted(flattened.keys())
+
+    for k in sorted_keys:
+        v = flattened[k]
+        parts = k.split(' - ')
+        current_idx = parts[0]
+
+        if last_idx is not None and current_idx != last_idx:
+            lines.append("") 
+
+        city_prefix = city_map.get(current_idx, current_idx)
+        new_key = k.replace(f"{current_idx} - ", f"[{city_prefix}] - ", 1)
+        
+        lines.append(f"• {new_key}: {v}")
+        last_idx = current_idx
+
+    return "\n".join(lines)
+
+# --- INFERENCE CONFIGURATION ---
+max_seq_length = 16384 
+dtype = None 
+load_in_4bit = True 
+model_path = "lora_model" # Matches latest training output name
+
+# Output setup
+output_file = "./evaluations/evaluation_results.json"
+os.makedirs(os.path.dirname(output_file), exist_ok=True)
+
+# 1. Load the trained LoRA model
 model, tokenizer = FastLanguageModel.from_pretrained(
-    #model_name = "../training/lora_model",
-    model_name = "unsloth/Meta-Llama-3.1-8B",
+    model_name = model_path,
     max_seq_length = max_seq_length,
     dtype = dtype,
     load_in_4bit = load_in_4bit,
     device_map="auto",
-    #load_in_4bit=False,  # Don't use 4-bit quantization (not needed for CPU)
-    #device_map={"": "cpu"},  # Force entire model to CPU
-    # local_files_only = True,
-    # token = "hf_...", # use one if using gated models like meta-llama/Llama-2-7b-hf
 )
 
-araia_prompt = """\nBelow is a User query that describes a task or a question, paired with an Input along with its context.
-\nWrite the Assitant's response that appropriately completes the request. If the Input is missing you should ignore it. 
+tokenizer = get_chat_template(tokenizer, chat_template = "llama-3.1")
+FastLanguageModel.for_inference(model)
 
-### User:
-{}
-
-### Input:
-{}
-
-### Assistant:
-{}"""
-
-testing_dataset = f'{os.getenv("PROJECT_HOME")}/datasets/ClimRR_Dataset_Test_filtered_new_n_final_n.json'
+# 2. Dataset Loading
+# TODO: Replace with the path to your testing dataset
+testing_dataset = "data/your_test_dataset.json" 
 dataset = load_dataset("json", data_files=testing_dataset)["train"]
 
-idx = 0
+queries = dataset["user"]
+outputs = dataset["assistant"]
 
-queries = dataset["user"][idx:]
-outputs = dataset["assistant"][idx:]
+# Check if 'input' exists in the dataset safely
+if "input" in dataset.column_names:
+    inputs = dataset["input"]
+else:
+    inputs = [""] * len(queries)
 
-#if "input" in dataset:
-inputs = dataset["input"][idx:]
-#else:
-#inputs = [""]*len(queries)
-#print(inputs)
+print(f"Starting evaluation on {len(queries)} samples...")
 
-# araia_prompt_train = Copied from above
-FastLanguageModel.for_inference(model) # Enable native 2x faster inference
+# --- EVALUATION LOOP ---
+for idx, (query, raw_input, reference_output) in enumerate(zip(queries, inputs, outputs)):
+    # Target Location extraction
+    found_locations = extract_location_names(raw_input)
+    location_header = "\n".join(found_locations) if found_locations else "None Identified"
 
-print(queries[0])
+    # Anchor Formatting
+    flat_input = format_flattened_string(raw_input)
+    
+    # System Prompt 
+    system_content = (
+        "You are a precision data analyst. Your task is to:\n"
+        "1. For each Location listed in the Target Locations, extract the exact numerical value from the relevant context block.\n"
+        "2. If you are unable to extract the exact value from the context, explicitly say 'missing that value'.\n"
+        "Finally. Answer the user query in natural language using those specific values.\n"
+        "Do NOT repeat the Context data. Only output the final answer."
+    )
 
-for query, input, output in zip(queries, inputs, outputs):
-    print("---------------------------------------------------------------------------------------------")
-    input_token = tokenizer([araia_prompt.format(query,input,"")], return_tensors = "pt").to("cuda")
+    messages = [
+        {"role": "system", "content": system_content},
+        {
+            "role": "user", 
+            "content": f"{query}\n\n### Target Locations:\n{location_header}\n\n### Context:\n{flat_input}"
+        }
+    ]
+    
+    input_ids = tokenizer.apply_chat_template(
+        messages, 
+        add_generation_prompt=True, 
+        return_tensors="pt"
+    ).to("cuda")
 
     with torch.no_grad():
-        generated_tokens = model.generate(**input_token, max_new_tokens=256)
-    generated_text = tokenizer.decode(generated_tokens[0], skip_special_tokens=True)
+        generated_tokens = model.generate(
+            input_ids=input_ids, 
+            max_new_tokens=512, 
+            use_cache=True,
+            do_sample=False,   
+            temperature=0,     
+            eos_token_id=tokenizer.eos_token_id 
+        )
     
-    if "### Assistant:" in generated_text:
-        assistant_response = generated_text.split("### Assistant:")[1].strip()
-    else:
-        assistant_response = generated_text.strip()
+    new_tokens = generated_tokens[0][len(input_ids[0]):]
+    assistant_response = tokenizer.decode(new_tokens, skip_special_tokens=True).strip()
 
-    idx += 1
-    print(f"Finished sample {idx}: generation succesfull.")
-    
-    entry = {"reference": output, "llm": assistant_response}
+    entry = {"reference": reference_output, "llm": assistant_response}
     append_last_entry(output_file, [entry])
+    
+    if (idx + 1) % 10 == 0:
+        print(f"Processed {idx + 1}/{len(queries)} samples...")
 
-    #text_streamer = TextStreamer(tokenizer)
-    #_ = model.generate(**input_token, streamer = text_streamer, max_new_tokens = 128)
+print(f"Evaluation complete. Results saved to {output_file}")
