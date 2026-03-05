@@ -1,0 +1,49 @@
+Fine-Tuning Reproducibility Pack — ClimRR × LLaMA 3.1
+Copyright 2025 Project ARIA Team
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+---
+
+This product includes software and data developed by the Project ARIA Team.
+
+Third-party components used by this project are governed by their own
+respective licenses:
+
+  - Meta LLaMA 3.1  (Meta Llama 3 Community License)
+    https://llama.meta.com/llama3/license/
+
+  - Unsloth  (Apache 2.0)
+    https://github.com/unslothai/unsloth
+
+  - Hugging Face Transformers  (Apache 2.0)
+    https://github.com/huggingface/transformers
+
+  - TRL — Transformer Reinforcement Learning  (Apache 2.0)
+    https://github.com/huggingface/trl
+
+  - PEFT — Parameter-Efficient Fine-Tuning  (Apache 2.0)
+    https://github.com/huggingface/peft
+
+  - Sentence Transformers  (Apache 2.0)
+    https://github.com/UKPLab/sentence-transformers
+
+  - scikit-learn  (BSD 3-Clause)
+    https://scikit-learn.org
+
+  - PyTorch  (BSD-style)
+    https://github.com/pytorch/pytorch
+
+The ClimRR dataset is sourced from the Argonne National Laboratory
+Climate Risk & Resilience (ClimRR) portal:
+    https://disgeoportal.egs.anl.gov/ClimRR/
